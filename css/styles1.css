@@ -1,0 +1,1808 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 5px;
+font-size: 150%;
+font: inherit;
+vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+@media screen and (orientation:portrait) {
+.body {
+    background-color: blue;
+    width: 100%;
+    height: 70%;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    font-size: 100%;
+    background-image: url('http://localhost:8080/images/webdevbg1.jpg');
+}
+.container {
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    border: solid black;
+    height: auto;
+}
+.portfolioContainer {
+    width: 100%;
+}
+.head {
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    font-size: 150%;
+    font-weight: bold;
+}
+.logoFig {
+    width: 25%;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.navList {
+    width: 70%;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    text-align: center;
+}
+.logo {
+    width: 20%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.nav {
+    width: 10%;
+    display: inline;
+    color: blue;
+    text-decoration: none;
+    position: relative;
+    top: 25%;
+    margin: 0% 4% 0% 8%;
+    padding: 0% 2% 0% 0%;
+    font-size: 60%;
+    float: left;
+    position: relative;
+    left: 10%;
+}
+.blog {
+    position: relative;
+    right: 25%;
+}
+.navlink {
+    width: 10%;
+    text-decoration: none;
+    color: blue;
+}
+.active {
+    color: white;
+}
+li a:hover {
+    color: cyan;
+}
+.midBody {
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+}
+.backgroundFig {
+    width: 90%;
+    height: auto;
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+}
+.background {
+    width: 120%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    position: relative;
+    right: 5%;
+}
+.socials {
+    width: 10%;
+    height: 100%;
+}
+.contact1, .contact2, .contact3, .contact4 {
+    width: 100%;
+    height: auto;
+    margin-top: 300%;
+}
+.socials1, .socials2, .socials3, .socials4 {
+    width: 100%;
+    height: 100%;
+}
+.sectionA {
+    width: 100%;
+    height: auto;
+    color: white;
+    margin: 0% 0% 0% 0%;
+}
+.sideBarFig1, .sideBarFig2 {
+    width: 16.6666%;
+    height: 100%;
+}
+.midBar {
+    width: 66.6666%;
+    height: auto;
+    position: relative;
+    left: 2%;
+}
+.sideBar1 {
+    width: 100%;
+    height: 100%;
+}
+.sideBar2 {
+    width: 100%;
+    height: 100%;
+}
+.recentProjects {
+    font-size: 100%;
+    font-weight: bold;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin: 2% 0% 2% 0%;
+    padding: 0% 0% 0% 0%;
+    height: 15%;
+
+}
+.projects {
+    width: 100%;
+    border-radius: 10px;
+    margin: 2% 0% 2% 0%;
+    height: 15%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.projec {
+    font-size: 100%;
+    width: 80%;
+    height: 120%;
+    margin: 0% 0% 5% 5%;
+    padding: 2% 0% 0% 0%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.iframe1, .iframe2 {
+    width: 49%;
+    height: 70%;
+    background-color: antiquewhite;
+    color: black;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 5%;
+    border-width: 10px;
+}
+.iframe1 {
+    padding: 5%;
+    margin: 0% 0% 0% 0%;
+    position: relative;
+    right: 2%;
+}
+.iframe2 {
+    padding: 5%;
+    margin: 0% 0% 0% 0%;
+    position: relative;
+    left: 2%;
+}
+.project1, .project2 {
+    width: 100%;
+    height: 60%;
+}
+.caption {
+    width: 100%;
+    height: 100%;
+    font-size: 80%;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    right: 5%;
+    margin: 0% 0% 0% 0%;
+    padding: 5% 0% 0% 2%;
+}
+.sectionB {
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    color: white;
+    margin: 2% 5% 2% 0%;
+    font-weight: bold;
+}
+.lowerBlock {
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.sectionC {
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 1%;
+    padding: 0% 0% 0% 2%;
+}
+.upcoming {
+    width: 100%;
+    height: 20%;  
+}
+.upcomingFig1, .upcomingFig2, .upcomingFig3 {
+    width: 29%;
+    height: auto;
+    padding: 4%;
+    background-color: antiquewhite;
+    color: black;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 5%;
+    border-width: 10px;
+    margin: 0% 0% 0% 0%;
+}
+.upcomingFig2 {
+    padding: 3%;
+    margin: 0% 0% 0% 0%;
+}
+.upcomingFig1 {
+    padding: 3%;
+    margin: 0% 4% 0% 0%;
+}
+.upcomingFig3 {
+    padding: 3%;
+    margin:  0% 0% 0% 4%;  
+}
+.upcoming1, .upcoming2, .upcoming3 {
+    width: 100%;
+    height: 60%;
+}
+.caption1 {
+    width: 100%;
+    height: 100%;
+    font-size: 75%;
+    font-weight: bold;
+    position: relative;
+    right: 15%;
+    margin: 0% 0% 0% 0%;
+    padding: 5% 0% 0% 2%;
+}
+.sectionD {
+    width: 100%;
+    height: auto;
+    color: black;
+    padding: 6% 6% 6% 6%;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+}
+.footer {
+    width: 110%;
+    height: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 0% 0% 0%;
+}
+.contactPgFooter {
+    width: 100%;
+}
+.gridAcontainer, .gridBcontainer, .gridCcontainer, .gridDcontainer, .gridEcontainer, .gridF, .gridG, .gridH {
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 2% 0%;
+    color: aliceblue;
+}
+.contactHead {
+    font-size: 300%;
+    font-weight: bold;
+    position: relative;
+    right: 2%;
+    color: cyan;
+}
+.inTouch {
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0% 2% 0% 0%;
+}
+.gridAcontainer {
+    height: 15%;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 2% 0% 2% 0%;
+}
+.gridBcontainer {
+    height: 15%;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.gridF {
+    width: 100%;
+    height: 50%;
+}
+.gridG {
+    font-size: 100%;
+    width: 66.6666%;
+    height: 100%;
+    font-weight: bold;
+}
+.emailTitle {
+    width: 100%;
+    background-color: black;
+    height: auto;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 2% 0% 2% 0%;
+    position: relative;
+    right: 3%;
+}
+.labels {
+    text-align: center;
+    font-size: 100%;
+}
+.nameAndMessage {
+    position: relative;
+    left: 15%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 2%;
+}
+.name, .mail, .message {
+    width: 70%;
+    height: 10%;
+    border: solid;
+    border-radius: 5%;
+    margin: 2% 0% 2% 0%;
+}
+.message {
+    height: 15%;
+}
+.send {
+    width: 70%;
+    font-size: 130%;
+    font-weight: bold;
+    margin: 3% 0% 0% 0%;
+}
+.gridH {
+    font-size: 200%;
+    font-weight: bold;
+}
+.blockquote {
+    font-size: 150%;
+    color: aliceblue;
+}
+.founder {
+    font-weight: bold;
+}
+.twitter, .facebook, .linkedin {
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    position: relative;
+    left: 10%;
+}
+img.twitter, img.facebook, img.linkedin, img.email {
+    height: 10%;
+}
+.span {
+    width: 90%;
+    position: relative;
+    left: 30%;
+    bottom: 1.5vh;
+    font-size: 150%;
+    font-weight: bolder;
+    color: white;
+    margin: 0% 0% 3% 0%;
+    padding: 0% 0% 0% 0%;
+} 
+.asideFig1, .asideFig2 {
+    width: 16.66%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.aside1, .aside2 {
+    width: 80%;
+    height: 70%;
+
+}
+.contactPageFooter {
+    width: 100%;
+    font-size: 190%;
+    font-weight: bold;
+}
+.aboutBody {
+    width: 100%;
+    height: auto;
+}
+.aboutMeContainer {
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    opacity: 100%;
+}
+.aboutMeGridA {
+    color: white;
+    width: 100%;
+    height: auto;
+    border: 5px white;
+    border-radius: 10px;
+    background-image: url('C:/Users/hp/Desktop/workbench/portfolio/images/webdevbg.png');
+}
+.aboutMeTitle {
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0% 0% 1% 0%;
+    padding: 0% 0% 0% 0%;
+    color: cyan;
+    opacity: 100%;
+}
+.aboutMeText1 {
+    font-size: 150%;
+    font-weight: bold;
+    width: 100%;
+    margin: 1% 0% 1% 0%;
+    padding: 4% 1% 4% 1%;
+}
+.aboutMeText2 {
+    font-size: 120%;
+    font-weight: bold;
+    width: 100%;
+    margin: 1% 0% 1% 0%;
+    padding: 4% 1% 4% 1%;
+}
+.aboutMeGridB {
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.List {
+    width: 100%;
+    height: auto;
+}
+.skills {
+    width: 100%;
+    height: auto;
+    margin: 0% 1% 0% 0%;
+    padding: 1% 3% 1% 2%;
+}
+.techskills {
+    width: 50%;
+    height: auto;
+    border: 5px solid white;
+    margin: 0% 0% 0% 0%;
+    padding: 3% 1% 3% 1%;
+    border-radius: 10px;
+}
+.softskills {
+    width: 50%;
+    height: auto;
+    border: 5px solid white;
+    margin: 0% 0% 0% 0%;
+    padding: 3% 1% 3% 1%;
+    border-radius: 10px;
+}
+.skillsTitle {
+    font-size: 200%;
+    text-align: center;
+    width: 100%;
+    color: cyan;
+    margin: 4% 0% 4% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.skillsList {
+    width: 100%;
+    font-size: 150%;
+    list-style: none;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 1% 1% 1%;
+}
+.aboutMeGridC {
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.chartFig {
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 10% 0% 30%;
+}
+.chartImg {
+    color: white;
+    width: 70%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.aboutMeGridD {
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 2% 0% 2%;
+}
+.randomFacts {
+    font-size: 200%;
+    color: cyan;
+    font-weight: bold;
+    margin: 0% 0% 0% 0%;
+    padding: 2% 2% 2% 2%;
+    width: 100%;
+    height: auto;
+}
+.rFacts {
+    width: 100%;
+    height: auto;
+    font-size: 150%;
+    margin: 0% 0% 0% 0%;
+    padding: 2% 2% 2% 2%;
+}
+.smedia {
+    color: cyan;
+    text-decoration: none;
+}
+a.smedia:hover {
+    color: red;
+}
+.aboutMeGridD {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 2% 0% 2%;
+}
+.mentor {
+    margin: 0% 0% 0% 0%;
+    padding: 0% 4% 0% 4%;
+}
+.secC {
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 5% 0%;
+    position: relative;
+    bottom: 100px;
+}
+.projA, .projB {
+    width: 45%;
+    padding: 0% 0% 0% 0%;
+}
+.projA {
+    padding: 5%;
+    margin: 0% 0% 0% 0%;
+    position: relative;
+    right: 1%;
+}
+.projB {
+    padding: 5%;
+    margin: 0% 0% 0% 0%;
+    position: relative;
+    left: 5%;
+}
+.work {
+    height: 25%;
+}
+}
+@media screen and (orientation:landscape) {
+    .body {
+        background-color: blue;
+        width: 100%;
+        height: 70%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        font-size: 100%;
+        background-image: url('C:/Users/hp/Desktop/workbench/portfolio/images/webdevbg1.jpg');
+    }
+    .container {
+        width: 101%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        border: solid black;
+        height: auto;
+    }
+    .portfolioContainer {
+        width: 100%;
+    }
+    .head {
+        width: 100%;
+        height: 15%;
+        background-color: black;
+        opacity: 100%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        font-size: 150%;
+        font-weight: bold;
+    }
+    .logoFig {
+        width: 20%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+    }
+    .navList {
+        width: 70%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        text-align: center;
+    }
+    .logo {
+        width: 50%;
+        height: 100%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+    }
+    .nav {
+        width: 10%;
+        display: inline;
+        color: blue;
+        opacity: 100%;
+        text-decoration: none;
+        position: relative;
+        top: 25%;
+        margin: 0% 4% 0% 8%;
+        padding: 0% 2% 0% 0%;
+        font-size: 60%;
+        float: left;
+        position: relative;
+        left: 10%;
+    }
+    .navlink {
+        width: 10%;
+        text-decoration: none;
+        color: blue;
+    }
+    .active {
+        color: white;
+    }
+    li a:hover {
+        color: cyan;
+    }
+    .backgroundFig {
+        width: 90%;
+        height: auto;
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+    }
+    .background {
+        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/finalCopy1.png');
+        width: 120%;
+        height: auto;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        position: relative;
+        right: 5%;
+    }
+    .socials {
+        width: 15%;
+        height: 100%;
+    }
+    .contact1, .contact2, .contact3, .contact4 {
+        width: 100%;
+        height: auto;
+        margin-top: 50%;
+    }
+    .socials1, .socials2, .socials3, .socials4 {
+        width: 10%;
+        height: auto;
+    }
+    .sectionA {
+        width: 100%;
+        height: auto;
+        color: white;
+        margin: 0% 0% 0% 0%;
+    }
+    .sideBarFig1, .sideBarFig2 {
+        width: 16.6666%;
+        height: 70%;
+    }
+    .midBar {
+        width: 66.6666%;
+        height: 30%;
+    }
+    .sideBar1 {
+        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/code.png');
+        width: 50%;
+        height: 100%; 
+    }
+    .sideBar2 {
+        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/designe.png');
+        width: 50%;
+        height: 50%;
+    }
+    .recentProjects {
+        font-size: 150%;
+        position: relative;
+        top: 25%;
+        width: 100%;
+        height: 20px;
+        margin: 2% 0% 2% 10%;
+    }
+    .projects {
+        width: 80%;
+        height: 50px;
+        margin: 2% 0% 2% 10%;
+        border-radius: 10px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    .projec {
+        width: 80%;
+        height: 45px;
+        font-size: 150%;
+        margin: 2% 0% 5% 0%;
+        padding: 1% 0% 0% 0%;
+        border-radius: 10px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        position: relative;
+        bottom: 100%;
+    }
+    .iframe1, .iframe2 {
+        width: 49%;
+        height: 70%;
+        background-color: antiquewhite;
+        color: black;
+        border-style: solid;
+        border-color: azure;
+        border-radius: 5%;
+        border-width: 10px;
+    }
+    .iframe1 {
+        padding: 3%;
+        margin: 0% 1% 0% 0%;
+    }
+    .iframe2 {
+        padding: 3%;
+        margin: 0% 0% 0% 0%;
+    }
+    .project1, .project2 {
+        width: 100%;
+        height: 50%;
+    }
+    .caption {
+        width: 100%;
+        height: 15%;
+        position: relative;
+        top: 5%;
+        font-size: large;
+        font-weight: bold;
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+    }
+    .sectionB {
+        width: 100%;
+        height: 5%;
+        text-align: center;
+        color: white;
+        margin: 2% 5% 2% 0%;
+    }
+    .sectionC {
+        width: 100%;
+        height: auto;
+        margin: 3% 1% 0% 2%;
+        padding: 0% 0% 0% 0%;
+    }
+    .upcoming {
+        width: 100%;
+        height: 20%;  
+    }
+    .upcomingFig1, .upcomingFig2, .upcomingFig3 {
+        width: 29%;
+        height: auto;
+        padding: 4%;
+        margin: 0% 0% 0% 0%;
+        background-color: antiquewhite;
+        color: black;
+        border-style: solid;
+        border-color: azure;
+        border-radius: 5%;
+        border-width: 10px;
+    }
+    .upcomingFig2 {
+        padding: 3%;
+        margin: 0% 0% 0% 0%;
+    }
+    .upcomingFig1 {
+        padding: 3%;
+        margin: 0% 2% 0% 0%;
+    }
+    .upcomingFig3 {
+        padding: 3%;
+        margin:  0% 0% 0% 2%;  
+    }
+    .upcoming1, .upcoming2, .upcoming3 {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .caption1 {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 5%;
+        font-size: 100%;
+        font-weight: bold;
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+    }
+    .sectionD {
+        width: 100%;
+        height: auto;
+        color: black;
+        padding: 6% 6% 6% 6%;
+        text-align: center;
+        margin: 0% 0% 0% 0%;
+    }
+    .footer {
+        width: 110%;
+        height: auto;
+        text-align: center;
+        background-color: black;
+        color: white;
+        margin: 0% 0% 0% 0%;
+        padding: 1% 0% 0% 0%;
+    }
+    .contactPgFooter {
+    width: 100%;
+}
+.gridAcontainer, .gridBcontainer, .gridCcontainer, .gridDcontainer, .gridEcontainer, .gridFcontainer .gridF, .gridG, .gridH {
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 2% 0%;
+    color: aliceblue;
+}
+.contactHead {
+    font-size: 300%;
+    font-weight: bold;
+    position: relative;
+    right: 4%;
+    color: cyan;
+}
+.inTouch {
+    font-size: 150%;
+    font-weight: bold;
+    position: relative;
+    right: 3%;
+}
+.gridAcontainer {
+    height: 15%;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 2% 0% 2% 0%;
+}
+.gridBcontainer {
+    height: 15%;
+    text-align: center;
+    margin: 2% 0% 2% 0%;
+    padding: 0% 0% 0% 0%;
+    position: relative;
+    top: 10px;
+}
+.gridF {
+    width: 100%;
+    height: 100%;
+}
+.gridG {
+    font-size: 100%;
+    width: 66.6666%;
+    height: 100%;
+    font-weight: bold;
+}
+.emailTitle {
+    width: 100%;
+    background-color: black;
+    height: auto;
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    margin: 2% 0% 2% 0%;
+    position: relative;
+    right: 5%;
+}
+.labels {
+    text-align: center;
+    font-size: 200%;
+}
+.nameAndMessage {
+    position: relative;
+    left: 18%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 2%;
+}
+.name, .mail, .message {
+    width: 70%;
+    height: 7%;
+    border-radius: 5%;
+    margin: 2% 0% 2% 0%;
+}
+.message {
+    height: 17%;
+}
+.send {
+    width: 70%;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 3% 0% 0% 0%;
+}
+.gridH {
+    font-size: 200%;
+    font-weight: bold;
+}
+.blockquote {
+    font-size: 150%;
+    color: aliceblue;
+}
+.founder {
+    font-weight: bold;
+}
+.contactPageFooter {
+    width: 100%;
+    font-size: 190%;
+    font-weight: bold;
+}
+.aboutBody {
+    width: 100%;
+    height: auto;
+}
+.aboutMeContainer {
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    opacity: 100%;
+}
+.aboutMeGridA {
+    color: white;
+    width: 100%;
+    height: auto;
+    border: 5px white;
+    border-radius: 10px;
+    background-image: url('C:/Users/hp/Desktop/workbench/portfolio/images/webdevbg.png');
+}
+.aboutMeTitle {
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0% 0% 1% 0%;
+    padding: 0% 0% 0% 0%;
+    color: cyan;
+    opacity: 100%;
+}
+.aboutMeText1 {
+    font-size: 150%;
+    font-weight: bold;
+    width: 100%;
+    margin: 1% 0% 1% 0%;
+    padding: 4% 1% 4% 1%;
+}
+.aboutMeText2 {
+    font-size: 120%;
+    font-weight: bold;
+    width: 100%;
+    margin: 1% 0% 1% 0%;
+    padding: 4% 1% 4% 1%;
+}
+.aboutMeGridB {
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.List {
+    width: 100%;
+    height: auto;
+}
+.skills {
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 1% 1% 1%;
+}
+.techskills {
+    width: 50%;
+    height: auto;
+    border: 10px solid white;
+    margin: 0% 0% 0% 0%;
+    padding: 3% 1% 3% 1%;
+    border-radius: 10px;
+    position: relative;
+    left: 5%;
+}
+.softskills {
+    width: 50%;
+    height: auto;
+    border: 10px solid white;
+    margin: 0px 0px 0px 0px;
+    padding: 3% 1% 3% 1%;
+    border-radius: 10px;
+    position: relative;
+    left: 13%;
+}
+.skillsTitle {
+    font-size: 200%;
+    text-align: center;
+    width: 100%;
+    color: cyan;
+    margin: 4% 0% 4% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.skillsList {
+    width: 100%;
+    font-size: 150%;
+    list-style: none;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 1% 1% 1%;
+}
+.aboutMeGridC {
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.chartFig {
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 10% 0% 30%;
+}
+.chartImg {
+    color: white;
+    width: 70%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.aboutMeGridD {
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 2% 0% 2%;
+}
+.randomFacts {
+    font-size: 200%;
+    color: cyan;
+    font-weight: bold;
+    margin: 0% 0% 0% 0%;
+    padding: 2% 2% 2% 2%;
+    width: 100%;
+    height: auto;
+}
+.rFacts {
+    width: 100%;
+    height: auto;
+    font-size: 150%;
+    margin: 0% 0% 0% 0%;
+    padding: 2% 2% 2% 2%;
+}
+.smedia {
+    color: cyan;
+    text-decoration: none;
+}
+a.smedia:hover {
+    color: red;
+}
+.aboutMeGridD {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 2% 0% 2%;
+}
+.mentor {
+    margin: 0% 0% 0% 0%;
+    padding: 0% 4% 0% 4%;
+}
+.secC {
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    margin: 0% 0% 5% 0%;
+    position: relative;
+    bottom: 100px;
+}
+.projA, .projB {
+    width: 48%;
+    padding: 0% 0% 0% 0%;
+}
+.projA {
+    margin: 0% 1% 0% 1%;
+}
+.work {
+    height: 25%;
+}
+.projCaption {
+    margin: 10px;
+    padding: 10px;
+}
+.projImg {
+    height: 20%;
+}
+}
+@media screen and (orientation:landscape) {
+    .body {
+        background-color: blue;
+        width: 100%;
+        height: 70%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        font-size: 100%;
+        background-image: url('C:/Users/hp/Desktop/workbench/portfolio/images/webdevbg1.jpg');
+    }
+    .container {
+        width: 101%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        border: solid black;
+        height: auto;
+    }
+    .portfolioContainer {
+        width: 100%;
+    }
+    .head {
+        width: 100%;
+        height: 15%;
+        background-color: black;
+        opacity: 100%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        font-size: 150%;
+        font-weight: bold;
+    }
+    .logoFig {
+        width: 20%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+    }
+    .navList {
+        width: 70%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        text-align: center;
+    }
+    .logo {
+        width: 50%;
+        height: 100%;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+    }
+    .nav {
+        width: 10%;
+        display: inline;
+        color: blue;
+        opacity: 100%;
+        text-decoration: none;
+        position: relative;
+        top: 25%;
+        margin: 0% 4% 0% 8%;
+        padding: 0% 2% 0% 0%;
+        font-size: 60%;
+        float: left;
+        position: relative;
+        left: 10%;
+    }
+    .navlink {
+        width: 10%;
+        text-decoration: none;
+        color: blue;
+    }
+    .active {
+        color: white;
+    }
+    li a:hover {
+        color: cyan;
+    }
+    .backgroundFig {
+        width: 90%;
+        height: auto;
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+    }
+    .background {
+        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/finalCopy1.png');
+        width: 120%;
+        height: auto;
+        margin: 0% 0% 0% 0%;
+        padding: 0% 0% 0% 0%;
+        position: relative;
+        right: 5%;
+    }
+    .socials {
+        width: 10%;
+        height: 100%;
+    }
+    .contact1, .contact2, .contact3, .contact4 {
+        width: 100%;
+        height: auto;
+        margin-top: 50%;
+    }
+    .socials1, .socials2, .socials3, .socials4 {
+        width: 100%;
+        height: auto;
+    }
+    .sectionA {
+        width: 100%;
+        height: auto;
+        color: white;
+        margin: 0% 0% 0% 0%;
+    }
+    .sideBarFig1, .sideBarFig2 {
+        width: 16.6666%;
+        height: 70%;
+    }
+    .midBar {
+        width: 66.6666%;
+        height: 30%;
+    }
+    .sideBar1 {
+        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/code.png');
+        width: 50%;
+        height: 100%; 
+    }
+    .sideBar2 {
+        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/designe.png');
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left: 50%;
+    }
+    .recentProjects {
+        font-size: 150%;
+        position: relative;
+        top: 25%;
+        width: 100%;
+        height: 20px;
+        margin: 2% 0% 2% 10%;
+    }
+    .projects {
+        width: 80%;
+        height: 50px;
+        margin: 2% 0% 2% 10%;
+        border-radius: 10px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    .projec {
+        width: 80%;
+        height: 45px;
+        font-size: 150%;
+        margin: 2% 0% 5% 0%;
+        padding: 1% 0% 0% 0%;
+        border-radius: 10px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        position: relative;
+        bottom: 100%;
+    }
+    .iframe1, .iframe2 {
+        width: 49%;
+        height: 70%;
+        background-color: antiquewhite;
+        color: black;
+        border-style: solid;
+        border-color: azure;
+        border-radius: 5%;
+        border-width: 10px;
+    }
+    .iframe1 {
+        padding: 5%;
+        margin: 0% 0% 0% 0%;
+        position: relative;
+        right: 2%;
+    }
+    .iframe2 {
+        padding: 5%;
+        margin: 0% 0% 0% 0%;
+        position: relative;
+        left: 4%;
+    }
+    .project1, .project2 {
+        width: 100%;
+        height: 50%;
+    }
+    .caption {
+        width: 100%;
+        height: 15%;
+        position: relative;
+        top: 5%;
+        font-size: large;
+        font-weight: bold;
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+    }
+    .sectionB {
+        width: 100%;
+        height: 5%;
+        text-align: center;
+        color: white;
+        margin: 2% 5% 2% 0%;
+    }
+    .sectionC {
+        width: 100%;
+        height: auto;
+        margin: 3% 1% 0% 2%;
+        padding: 0% 0% 0% 0%;
+    }
+    .upcoming {
+        width: 100%;
+        height: 20%;  
+    }
+    .upcomingFig1, .upcomingFig2, .upcomingFig3 {
+        width: 29%;
+        height: auto;
+        padding: 4%;
+        margin: 0% 0% 0% 0%;
+        background-color: antiquewhite;
+        color: black;
+        border-style: solid;
+        border-color: azure;
+        border-radius: 5%;
+        border-width: 10px;
+    }
+    .upcomingFig2 {
+        padding: 3%;
+        margin: 0% 0% 0% 0%;
+    }
+    .upcomingFig1 {
+        padding: 3%;
+        margin: 0% 2% 0% 0%;
+    }
+    .upcomingFig3 {
+        padding: 3%;
+        margin:  0% 0% 0% 2%;  
+    }
+    .upcoming1, .upcoming2, .upcoming3 {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .caption1 {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 5%;
+        font-size: 100%;
+        font-weight: bold;
+        padding: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 0%;
+    }
+    .sectionD {
+        width: 100%;
+        height: auto;
+        color: black;
+        padding: 6% 6% 6% 6%;
+        text-align: center;
+        margin: 0% 0% 0% 0%;
+    }
+    .footer {
+        width: 110%;
+        height: auto;
+        text-align: center;
+        background-color: black;
+        color: white;
+        margin: 0% 0% 0% 0%;
+        padding: 1% 0% 0% 0%;
+    }
+    .contactPgFooter {
+    width: 100%;
+}
+.gridAcontainer, .gridBcontainer, .gridCcontainer, .gridDcontainer, .gridEcontainer, .gridFcontainer .gridF, .gridG, .gridH {
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 2% 0%;
+    color: aliceblue;
+}
+.contactHead {
+    font-size: 300%;
+    font-weight: bold;
+    position: relative;
+    right: 4%;
+    color: cyan;
+}
+.inTouch {
+    font-size: 150%;
+    font-weight: bold;
+    position: relative;
+    right: 3%;
+}
+.gridAcontainer {
+    height: 15%;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 2% 0% 2% 0%;
+}
+.gridBcontainer {
+    height: 15%;
+    text-align: center;
+    margin: 2% 0% 2% 0%;
+    padding: 0% 0% 0% 0%;
+    position: relative;
+    top: 10px;
+}
+.gridF {
+    width: 100%;
+    height: 100%;
+}
+.gridG {
+    font-size: 100%;
+    width: 66.6666%;
+    height: 100%;
+    font-weight: bold;
+}
+.emailTitle {
+    width: 100%;
+    background-color: black;
+    height: auto;
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    margin: 2% 0% 2% 0%;
+    position: relative;
+    right: 5%;
+}
+.labels {
+    text-align: center;
+    font-size: 200%;
+}
+.nameAndMessage {
+    position: relative;
+    left: 18%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 2%;
+}
+.name, .mail, .message {
+    width: 70%;
+    height: 7%;
+    border-radius: 5%;
+    margin: 2% 0% 2% 0%;
+}
+.message {
+    height: 17%;
+}
+.send {
+    width: 70%;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 3% 0% 0% 0%;
+}
+.gridH {
+    font-size: 200%;
+    font-weight: bold;
+}
+.blockquote {
+    font-size: 150%;
+    color: aliceblue;
+}
+.founder {
+    font-weight: bold;
+}
+.twitter, .facebook, .linkedin {
+    margin: 1% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    width: 10%;
+    height: 10%;
+    position: relative;
+    left: 10%;
+}
+img.twitter {
+    content: url('C:/Users/hp/Desktop/workbench/portfolio/images/twitter1.png');
+    height: 25%;
+}
+img.facebook {
+    content: url('C:/Users/hp/Desktop/workbench/portfolio/images/facebook1.png');
+    height: 25%;
+}
+img.linkedin {
+    content: url('C:/Users/hp/Desktop/workbench/portfolio/images/linkedIn1.png');
+    height: 25%;
+}
+img.email {
+    content: url('C:/Users/hp/Desktop/workbench/portfolio/images/email1.png');
+    height: 25%;
+}
+.gridDcontainer, .gridCcontainer, .gridEcontainer, .gridFcontainer {
+    display: inline;
+    margin: 2% 2% 5% 0%;
+}
+.span {
+    width: 90%;
+    position: relative;
+    left: 35%;
+    bottom: 1.5vh;
+    font-size: 150%;
+    font-weight: bolder;
+    opacity: 0%;
+    margin: 0% 0% 3% 0%;
+    padding: 0% 0% 0% 0%;
+} 
+.asideFig1, .asideFig2 {
+    width: 16.66%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.aside1, .aside2 {
+    width: 80%;
+    height: 70%;
+
+}
+.contactPg {
+    width: 110%;
+}
+.contactPageFooter {
+    width: 100%;
+    font-size: 190%;
+    font-weight: bold;
+}
+.figures {
+    position: relative;
+    bottom: 30px;
+}
+.aboutBody {
+    width: 100%;
+    height: auto;
+}
+.aboutMeContainer {
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.abouthead {
+    height: 50px;
+}
+.aboutMeGridA {
+    color: white;
+    width: 100%;
+    height: auto;
+    border: 5px white;
+    border-radius: 10px;
+    background-image: url('C:/Users/hp/Desktop/workbench/portfolio/images/webdevbg.png');
+}
+.aboutMeTitle {
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0% 0% 1% 0%;
+    padding: 0% 0% 0% 0%;
+    color: cyan;
+    opacity: 100%;
+}
+.aboutMeText1 {
+    font-size: 150%;
+    font-weight: bold;
+    width: 100%;
+    margin: 1% 0% 1% 0%;
+    padding: 1% 1% 1% 1%;
+    text-align: center;
+}
+.aboutMeText2 {
+    font-size: 120%;
+    font-weight: bold;
+    width: 100%;
+    margin: 1% 0% 1% 0%;
+    padding: 2% 1% 2% 1%;
+    text-align: center;
+}
+.aboutMeGridB {
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.List {
+    width: 100%;
+    height: auto;
+}
+.skills {
+    width: 100%;
+    height: auto;
+    margin: 0% 1% 0% 0%;
+    padding: 1% 1% 1% 1%;
+}
+.techskills {
+    width: 50%;
+    height: auto;
+    border: 5px solid white;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 10px;
+}
+.softskills {
+    width: 50%;
+    height: auto;
+    border: 5px solid white;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 10px;
+}
+.skillsTitle {
+    font-size: 200%;
+    text-align: center;
+    width: 100%;
+    color: cyan;
+    margin: 4% 0% 4% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.skillsList {
+    width: 100%;
+    font-size: 150%;
+    list-style: none;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 1% 1% 1%;
+}
+.aboutMeGridC {
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.chartFig {
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 10% 0% 30%;
+}
+.chartImg {
+    color: white;
+    width: 70%;
+    height: auto;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+.aboutMeGridD {
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 2% 0% 2%;
+}
+.randomFacts {
+    font-size: 200%;
+    color: cyan;
+    font-weight: bold;
+    margin: 0% 0% 0% 0%;
+    padding: 2% 2% 2% 2%;
+    width: 100%;
+    height: auto;
+}
+.rFacts {
+    width: 100%;
+    height: auto;
+    font-size: 150%;
+    margin: 0% 0% 0% 0%;
+    padding: 2% 2% 2% 2%;
+}
+.smedia {
+    color: cyan;
+    text-decoration: none;
+}
+a.smedia:hover {
+    color: red;
+}
+.aboutMeGridD {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0% 0% 0% 0%;
+    padding: 0% 2% 0% 2%;
+}
+.mentor {
+    margin: 0% 0% 0% 0%;
+    padding: 0% 4% 0% 4%;
+}
+.secC {
+    width: 100%;
+    padding: 10% 10% 10% 10%;
+    margin: 5% 0% 5% 0%;
+    position: relative;
+    right: 5.5%;
+}
+.projA, .projB {
+    width: 48%;
+    padding: 0% 0% 0% 0%;
+}
+.projA {
+    padding: 5%;
+    margin: 0% 0% 0% 0%;
+    position: relative;
+    right: 5%;
+}
+.projB {
+    padding: 5%;
+    margin: 0% 0% 0% 0%;
+    position: relative;
+    left: 5%;
+}
+.portfoliohead {
+    height: 60px;
+}
+.work {
+    position: relative;
+    bottom: 10px;
+    right: 2%;
+}
+.blockquote {
+    color: aliceblue;
+}
+.inkscape {
+    height: 50%;
+} 
+}
+@media screen and (max-width:380px) {
+    .socials1, .socials2, .socials3, .socials4 {
+        width: 400%;
+        height: 400%;
+        margin: 0% 0% 100% 0%;
+    }
+}
+
+
