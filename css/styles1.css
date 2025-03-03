@@ -50,7 +50,7 @@ a {
     margin: 0% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
     font-size: 100%;
-    background-image: url('http://localhost:8080/images/webdevbg1.jpg');
+    background-image: url('https://nick-maximillien.netlify.app/images/webdevbg1.jpg');
 }
 .container {
     width: 100%;
@@ -466,7 +466,7 @@ img.twitter, img.facebook, img.linkedin, img.email {
     height: auto;
     border: 5px white;
     border-radius: 10px;
-    background-image: url('C:/Users/hp/Desktop/workbench/portfolio/images/webdevbg.png');
+    background-image: url('https://nick-maximillien.netlify.app/images/webdevbg.png');
 }
 .aboutMeTitle {
     font-size: 250%;
@@ -639,7 +639,7 @@ a.smedia:hover {
         margin: 0% 0% 0% 0%;
         padding: 0% 0% 0% 0%;
         font-size: 100%;
-        background-image: url('C:/Users/hp/Desktop/workbench/portfolio/images/webdevbg1.jpg');
+        background-image: url('https://nick-maximillien.netlify.app//images/webdevbg1.jpg');
     }
     .container {
         width: 101%;
@@ -711,7 +711,7 @@ a.smedia:hover {
         margin: 0% 0% 0% 0%;
     }
     .background {
-        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/finalCopy1.png');
+        content: url('https://nick-maximillien.netlify.app/images/finalCopy1.png');
         width: 120%;
         height: auto;
         margin: 0% 0% 0% 0%;
@@ -747,12 +747,12 @@ a.smedia:hover {
         height: 30%;
     }
     .sideBar1 {
-        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/code.png');
+        content: url('https://nick-maximillien.netlify.app//images/code.png');
         width: 50%;
         height: 100%; 
     }
     .sideBar2 {
-        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/designe.png');
+        content: url('https://nick-maximillien.netlify.app//images/designe.png');
         width: 50%;
         height: 50%;
     }
@@ -1009,7 +1009,7 @@ a.smedia:hover {
     height: auto;
     border: 5px white;
     border-radius: 10px;
-    background-image: url('C:/Users/hp/Desktop/workbench/portfolio/images/webdevbg.png');
+    background-image: url('https://nick-maximillien.netlify.app//images/webdevbg.png');
 }
 .aboutMeTitle {
     font-size: 250%;
@@ -1184,7 +1184,7 @@ a.smedia:hover {
         margin: 0% 0% 0% 0%;
         padding: 0% 0% 0% 0%;
         font-size: 100%;
-        background-image: url('C:/Users/hp/Desktop/workbench/portfolio/images/webdevbg1.jpg');
+        background-image: url('https://nick-maximillien.netlify.app/images/webdevbg1.jpg');
     }
     .container {
         width: 101%;
@@ -1256,7 +1256,7 @@ a.smedia:hover {
         margin: 0% 0% 0% 0%;
     }
     .background {
-        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/finalCopy1.png');
+        content: url('https://nick-maximillien.netlify.app/images/finalCopy1.png');
         width: 120%;
         height: auto;
         margin: 0% 0% 0% 0%;
@@ -1292,12 +1292,12 @@ a.smedia:hover {
         height: 30%;
     }
     .sideBar1 {
-        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/code.png');
+        content: url('https://nick-maximillien.netlify.app/images/code.png');
         width: 50%;
         height: 100%; 
     }
     .sideBar2 {
-        content: url('C:/Users/hp/Desktop/workbench/portfolio/images/designe.png');
+        content: url('https://nick-maximillien.netlify.app/images/designe.png');
         width: 50%;
         height: 50%;
         position: relative;
@@ -1547,19 +1547,19 @@ a.smedia:hover {
     left: 10%;
 }
 img.twitter {
-    content: url('C:/Users/hp/Desktop/workbench/portfolio/images/twitter1.png');
+    content: url('https://nick-maximillien.netlify.app/images/twitter1.png');
     height: 25%;
 }
 img.facebook {
-    content: url('C:/Users/hp/Desktop/workbench/portfolio/images/facebook1.png');
+    content: url('https://nick-maximillien.netlify.app/images/facebook1.png');
     height: 25%;
 }
 img.linkedin {
-    content: url('C:/Users/hp/Desktop/workbench/portfolio/images/linkedIn1.png');
+    content: url('https://nick-maximillien.netlify.app/images/linkedIn1.png');
     height: 25%;
 }
 img.email {
-    content: url('C:/Users/hp/Desktop/workbench/portfolio/images/email1.png');
+    content: url('https://nick-maximillien.netlify.app/images/email1.png');
     height: 25%;
 }
 .gridDcontainer, .gridCcontainer, .gridEcontainer, .gridFcontainer {
@@ -1619,7 +1619,7 @@ img.email {
     height: auto;
     border: 5px white;
     border-radius: 10px;
-    background-image: url('C:/Users/hp/Desktop/workbench/portfolio/images/webdevbg.png');
+    background-image: url('https://nick-maximillien.netlify.app/images/webdevbg.png');
 }
 .aboutMeTitle {
     font-size: 250%;
