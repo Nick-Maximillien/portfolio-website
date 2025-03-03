@@ -104,12 +104,19 @@ a {
 }
 .blog {
     position: relative;
-    right: 25%;
+    right: 50px;
+}
+.contact {
+    position: relative;
+    left: 40px; 
 }
 .navlink {
     width: 10%;
     text-decoration: none;
     color: blue;
+    margin: 0% 0% 0% 0%;
+    position: relative;
+    right: 120%;
 }
 .active {
     color: white;
