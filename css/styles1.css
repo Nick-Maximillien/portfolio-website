@@ -239,7 +239,7 @@ li a:hover {
 .caption {
     width: 100%;
     height: 100%;
-    font-size: 80%;
+    font-size: 60%;
     font-weight: bold;
     margin: 10px;
     padding: 10px;
@@ -303,7 +303,7 @@ li a:hover {
 .caption1 {
     width: 100%;
     height: 100%;
-    font-size: 75%;
+    font-size: 60%;
     font-weight: bold;
     position: relative;
     right: 15%;
@@ -636,6 +636,26 @@ a.smedia:hover {
 }
 .work {
     height: 25%;
+}
+.inProgress {
+    width: 100%;
+}
+.inProgressImg {
+    width: 100%;
+}
+.inProgressX {
+    width: 100%;
+    border: solid 10px;
+    border-radius: 10px;
+    padding: 4% 4% 4% 4%;
+    font-size: 150%;
+    color: white;
+    background-color: silver;
+    margin: 4% 0% 4% 0%;
+}
+.bold {
+    font-weight: bold;
+    color: cyan;
 }
 }
 @media screen and (orientation:landscape) {
@@ -1802,6 +1822,26 @@ a.smedia:hover {
 }
 .inkscape {
     height: 50%;
+}
+.inProgress {
+    width: 100%;
+}
+.inProgressImg {
+    width: 100%;
+}
+.inProgressX {
+    width: 100%;
+    border: solid 10px;
+    border-radius: 10px;
+    padding: 4% 4% 4% 4%;
+    font-size: 150%;
+    color: white;
+    background-color: silver;
+    margin: 4% 0% 4% 0%;
+}
+.bold {
+    font-weight: bold;
+    color: cyan;
 } 
 }
 @media screen and (max-width:380px) {

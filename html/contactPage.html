@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../css/styles1.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body class="body col-md-12 col-sm-12 col-xs-12"">
     <div class="container contactPg col-md-12 col-sm-12 col-xs-12">
@@ -40,18 +41,41 @@
     <figure class="asideFig1 col-md-2 col-sm-2 col-xs-2"><img class="aside1" src="../images/designe.png" alt=""></figure>
     <div class="gridG col-md-8 col-sm-8 col-xs-8">
         <h1 class="emailTitle">Send me an E-mail</h1>
-        <form class="nameAndMessage" action="">
-                <label class="labels" for="name">Name:<br /> 
-                    <input class="name" type="text">
-                </label><br />
-                <label class="labels" for="email">Email:<br />
-                    <input class="mail" type="email">
-                </label><br />
-                <label class="labels" for="message">Message:<br />
-                    <textarea class="message" name="" id=""></textarea>
-                </label><br />
-                <a href="mailTo:nicholasmuthoki@gmail.com"><label for="submit"><input class="send" type="Submit" value="Send"></label></a></p>
+        <form class="nameAndMessage" onsubmit="sendEmail(event)">
+            <label class="labels" for="name">Name:<br /> 
+                <input class="name" type="text" id="name">
+            </label><br />
+            <label class="labels" for="email">Email:<br />
+                <input class="mail" type="email" id="email">
+            </label><br />
+            <label class="labels" for="message">Message:<br />
+                <textarea class="message" id="message"></textarea>
+            </label><br />
+            <input class="send" type="submit" value="Send">
         </form>
+        
+        <script>
+            (function() {
+                emailjs.init("service_iwhkx4m"); // Replace with your EmailJS User ID
+            })();
+        
+            function sendEmail(event) {
+                event.preventDefault();
+        
+                let templateParams = {
+                    name: document.getElementById("name").value,
+                    email: document.getElementById("email").value,
+                    message: document.getElementById("message").value
+                };
+        
+                emailjs.send("service_iwhkx4m", "template_2qxlrws", templateParams)
+                    .then(function(response) {
+                        alert("Message Sent Successfully!");
+                    }, function(error) {
+                        alert("Failed to send message. Try again later.");
+                    });
+            }
+        </script>        
     </div>
         <figure class="asideFig2 col-md-2 col-sm-2 col-xs-2"><img class="aside2" src="../images/code.png" alt=""></figure>
 </div>
