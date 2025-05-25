@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voting DApp Case Study – Smart Agrovet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #111827;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #4f46e5;
+    }
+    p, li {
+      line-height: 1.7;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      color: #6b7280;
+      margin-bottom: 1.5rem;
+    }
+    .section {
+      margin-top: 2rem;
+    }
+    .tech-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .tech-table th, .tech-table td {
+      border: 1px solid #e5e7eb;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    .tech-table th {
+      background-color: #f3f4f6;
+    }
+    .buttons {
+      margin-top: 2rem;
+    }
+    .buttons a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      margin-right: 1rem;
+      border-radius: 5px;
+      color: white;
+      background-color: #4f46e5;
+    }
+    .buttons a.github {
+      background-color: #1f2937;
+    }
+    .badge {
+      display: inline-block;
+      background: #10b981;
+      color: white;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      margin-left: 0.5rem;
+    }
+    .badge.gray {
+      background: #6b7280;
+    }
+    .warning {
+      background: #fff7ed;
+      border-left: 6px solid #f97316;
+      padding: 1rem;
+      margin: 2rem 0;
+      border-radius: 5px;
+      color: #7c2d12;
+    }
+    .section-title {
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-top: 2rem;
+    }
+    .animated-feature {
+      transition: all 0.3s ease-in-out;
+    }
+    .animated-feature:hover {
+      transform: scale(1.03);
+      background: #eef2ff;
+    }
+    .screenshot {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 1rem;
+    }
+    .lighthouse {
+      background-color: #ecfdf5;
+      border: 1px solid #10b981;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🗳️ Voting DApp for Agricultural Cooperatives 
+      <span class="badge">Deployed on Vercel</span>
+    </h1>
+    <div class="tagline">
+      <strong>Client:</strong> Internal / Open Source 
+      <span class="badge gray">Open Source</span><br/>
+      <strong>Category:</strong> Blockchain | Agriculture | Governance | Voting System <br/>
+      <strong>Type:</strong> Blockchain-based Voting System (DApp) <br/>
+      <strong>Stack:</strong> Next.js, Solidity, Ethers.js, Remix, Infura, Sepolia Testnet, Metamask
+    </div>
+
+    <div class="warning">
+      ⚠️ You’ll need a Metamask wallet connected to Sepolia Testnet to interact.
+    </div>
+
+    <h2>🔍 Overview</h2>
+    <p>
+      This decentralized voting application (DApp) was originally built for agricultural cooperative societies, empowering members to vote on critical decisions securely and transparently. Designed for adaptability, this project can easily serve NGOs, schools, unions, SACCOs, HOAs, or any democratic organization—making it a powerful and multidisciplinary blockchain solution.
+    </p>
+    <p>
+      Built with a modern frontend (Next.js) and a robust smart contract backend (Solidity on Ethereum's Sepolia testnet), the system enforces fair governance, eliminates vote manipulation, and offers an interactive data visualization layer to display results in real-time.
+    </p>
+
+    <h2>💡 Problem</h2>
+    <p>Traditional cooperative societies often lack transparent, secure voting mechanisms. Physical voting is inefficient, error-prone, and sometimes manipulated. Existing digital solutions are centralized, raising trust and integrity concerns.</p>
+    <p>This cooperative wanted a blockchain-based alternative that:</p>
+    <ul>
+      <li>Ensures only authorized members vote.</li>
+      <li>Enables vote delegation if a member is unavailable.</li>
+      <li>Provides real-time vote results in a visual dashboard.</li>
+      <li>Operates with complete transparency and immutability.</li>
+    </ul>
+
+    <h2>✅ Solution</h2>
+    <p>We created a secure Voting DApp featuring:</p>
+    <ul>
+      <li class="animated-feature">Smart Contract on Ethereum (Sepolia) to manage all voting logic and proposal handling.</li>
+      <li class="animated-feature">Next.js frontend to ensure a responsive and accessible voting experience.</li>
+      <li class="animated-feature">Real-time charts (via Recharts) to visualize the vote count.</li>
+      <li class="animated-feature">Wallet Integration using Metamask and Ethers.js to authenticate voters.</li>
+      <li class="animated-feature">Role Control where only the chairperson can authorize members to vote.</li>
+      <li class="animated-feature">Vote Delegation so users can transfer their voting rights.</li>
+      <li class="animated-feature">Live Blockchain Syncing to fetch proposals and votes as they happen.</li>
+    </ul>
+
+    <h2>🛠️ Tech Stack</h2>
+    <table class="tech-table">
+      <thead>
+        <tr>
+          <th>Layer</th>
+          <th>Tools Used</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frontend</td>
+          <td>Next.js (App Router), TypeScript, Tailwind CSS</td>
+        </tr>
+        <tr>
+          <td>Blockchain</td>
+          <td>Solidity (Remix IDE), Sepolia Testnet</td>
+        </tr>
+        <tr>
+          <td>Wallet & Contracts</td>
+          <td>Ethers.js, Infura, Metamask</td>
+        </tr>
+        <tr>
+          <td>Data Visualization</td>
+          <td>Recharts</td>
+        </tr>
+        <tr>
+          <td>Testing & Deployment</td>
+          <td>Remix IDE, Sepolia Faucet</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>🔐 Key Features</h2>
+    <ul>
+      <li>Wallet Authentication via Metamask.</li>
+      <li>Role-Based Voting Rights: Only the chairperson can assign voting rights.</li>
+      <li>Proposal Voting: Each member can vote for their preferred option.</li>
+      <li>Delegation Logic: Users can delegate their vote to another member.</li>
+      <li>Live Vote Tracking: Users view results as a bar graph updated in real-time.</li>
+      <li>Error Handling & User Feedback: Integrated toast notifications guide users through each action.</li>
+    </ul>
+
+    <h2>🧠 Learnings & Outcome</h2>
+    <p>This DApp demonstrated the real-world application of Web3 governance in agriculture—an often-overlooked space for decentralization. We successfully:</p>
+    <ul>
+      <li>Showcased how blockchain ensures tamper-proof democratic participation.</li>
+      <li>Built a reusable template that can be customized for any group decision-making system.</li>
+      <li>Delivered a mobile-responsive, user-friendly, and secure experience.</li>
+    </ul>
+    <div class="lighthouse">
+      <strong>Performance Highlights (Lighthouse):</strong><br>
+      ✅ Performance: 98<br>
+      ✅ Accessibility: 100<br>
+      ✅ Best Practices: 100<br>
+      ✅ SEO: 95
+    </div>
+
+    <h2>🔄 Future Enhancements</h2>
+    <ul>
+      <li>🧾 Audit Log of all transactions and votes.</li>
+      <li>📱 Mobile-first PWA for easier access in rural areas.</li>
+      <li>🧑🏽‍🌾 Integration with farmer co-op platforms.</li>
+      <li>🏛️ DAO-ready infrastructure for larger governance implementations.</li>
+    </ul>
+
+    <h2>👨🏽‍💻 Try It Live</h2>
+    <div class="buttons">
+      <a href="https://voting-dapp-kktj.vercel.app/" target="_blank">🌐 View Live Site</a>
+      <a href="https://github.com/Nick-Maximillien/voting-dapp" target="_blank" class="github">💻 GitHub Repository</a>
+    </div>
+    <img src="screenshot.png" alt="Voting DApp Screenshot" class="screenshot" />
+
+    <h2>📬 Want Something Similar?</h2>
+    <p>If you're building for voting, governance, DAOs, or cooperatives, this blueprint is for you.</p>
+    <p>👉 Let’s work together to bring decentralized trust to your organization.</p>
+    <p><a href="contactPage.html">Contact Me</a></p>
+  </div>
+</body>
+</html>
