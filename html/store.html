@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Smart Agrovet Webstore – Case Study</title>
+  <link rel="stylesheet" href="../css/styles1.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -17,6 +18,24 @@
       color: white;
       padding: 2.5rem 1rem 1rem;
       text-align: center;
+    }
+    .navList {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0;
+      margin: 0 0 1rem;
+      flex-wrap: wrap;
+    }
+    .navList li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.4rem 0.8rem;
+    }
+    .navList li a.active {
+      text-decoration: underline;
     }
     .header-buttons {
       margin-top: 1rem;
@@ -56,6 +75,10 @@
       color: #777;
     }
     @media (max-width: 600px) {
+      .navList {
+        flex-direction: column;
+        align-items: center;
+      }
       .header-buttons a {
         display: block;
         margin: 0.5rem auto;
@@ -68,6 +91,12 @@
 <body>
 
   <header>
+    <ul class="navList">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="portfolio.html">Portfolio</a></li>
+      <li><a href="contactPage.html">Contact</a></li>
+    </ul>
     <h1>Smart Agrovet Webstore</h1>
     <p>Empowering modern farmers through e-commerce and agritech integration</p>
     <div class="header-buttons">
@@ -76,25 +105,24 @@
     </div>
   </header>
 
-  <div class="container">
-
-    <div class="section">
+  <main class="container">
+    <section class="section">
       <h2>📌 Project Overview</h2>
       <p>
         Smart Agrovet is a full-featured online shop for farming inputs and implements, built to streamline agricultural product access for small to large-scale farmers. It’s also designed to integrate with an AI-powered agritech platform featuring a YOLOv8-trained crop disease detector and GPT-4 insights engine — making it not just a shop, but a gateway to intelligent farming.
       </p>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>🎯 Goals</h2>
       <ul>
         <li>Create a modern, mobile-friendly agricultural e-commerce store</li>
         <li>Enable farmers to browse, search, and buy tools, seeds, fertilizers, and equipment</li>
         <li>Serve as a frontend gateway for future integration with AI-powered crop diagnosis and insights tools</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>🧰 Tech Stack</h2>
       <ul>
         <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind CSS</li>
@@ -103,9 +131,9 @@
         <li><strong>CMS:</strong> Django Admin</li>
         <li><strong>Deployment:</strong> Netlify (frontend), Railway (backend)</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>👨‍💻 My Role</h2>
       <p>
         I worked as the sole fullstack developer — designing, coding, and deploying the entire system end-to-end, including:
@@ -117,34 +145,33 @@
         <li>Building the admin CMS for product management</li>
         <li>Deploying and connecting the frontend and backend via RESTful APIs</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>🚧 Challenges</h2>
       <p>
         One of the key challenges was optimizing image delivery for product pages while keeping load times low for rural users with limited connectivity. I resolved this by integrating Cloudinary with dynamic image scaling. Another challenge was structuring a backend that could eventually scale into a more advanced agritech platform.
       </p>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>📈 Outcome & Lessons Learned</h2>
       <p>
         The Smart Agrovet Webstore is now a solid foundation for a growing agritech ecosystem. I learned a lot about REST API integration, performance optimization, and designing systems with future AI scalability in mind. This project also improved my ability to juggle both frontend and backend development independently.
       </p>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>📬 Get In Touch</h2>
       <p>
-        Looking to build a custom e-commerce solution, or integrate AI into your industry platform?
-        Let’s work together.
+        Looking to build a custom e-commerce solution, or integrate AI into your industry platform? Let’s work together.
       </p>
       <p>
-        <p><a href="contactPage.html">Contact Me</a></p>
-        📧 Email: <a href="mailto:nicholasmuthoki@example.com"><p>Send me an Email</p></a><br>
+        <a href="contactPage.html">📨 Contact Me</a><br>
+        📧 <a href="mailto:nicholasmuthoki@example.com">Send me an email</a>
       </p>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <footer>
     &copy; 2025 Nick Maximillien. All rights reserved.

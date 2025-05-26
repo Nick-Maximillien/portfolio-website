@@ -5,34 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Case study for a modern blog website built with React and Strapi backend">
   <title>Blog Website Case Study | Nick Maximillien</title>
+  
+  <!-- Optional Bootstrap CDN (for grid/flex if needed later) -->
+  link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #333;
+      background: #0077cc;
+      color: #fff;
+      font-size: 1rem;
     }
+
+    .navList {
+      list-style: none;
+      background: #fff;
+      padding: 1rem;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .navList li {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+
+    .navList li a {
+      color: #0077cc;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .navList li a.active {
+      color: #005fa3;
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+
     .container {
       max-width: 900px;
-      margin: auto;
-      padding: 2rem;
+      margin: 1rem auto;
+      padding: 1rem;
       background: #fff;
+      color: #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-    h1, h2, h3 {
-      color: #111;
+
+    h1 {
+      color: #003366;
+      font-size: 2.5rem;
     }
+
+    h2, h3 {
+      color: #003366;
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+
     a {
       color: #0077cc;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .section {
       margin-bottom: 2rem;
     }
+
     .buttons a {
       display: inline-block;
       margin-right: 1rem;
@@ -43,25 +97,73 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     .buttons a:hover {
       background-color: #005fa3;
     }
+
     code {
       background: #eee;
       padding: 2px 4px;
       border-radius: 3px;
     }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      .section {
+        margin-bottom: 1.5rem;
+      }
+
+      .buttons a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .navList {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navList li {
+        width: 100%;
+      }
+
+      .container {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>📚 Blog Website Case Study</h1>
 
+  <ul class="navList">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a class="active" href="portfolio.html">Portfolio</a></li>
+    <li><a href="contactPage.html">Contact</a></li>
+  </ul>
+
+  <div class="hero">
+    <h1>📚 Blog Website Case Study</h1>
+    <p>Built with React and Strapi CMS for modern publishing</p>
+  </div>
+
+  <div class="container">
     <div class="section">
       <h2>Overview</h2>
-      <p>
-        This blog platform was designed to help content creators, small businesses, and thought leaders publish and manage their posts effortlessly. It's built with <strong>React</strong> on the frontend and <strong>Strapi</strong> as the headless CMS backend.
-      </p>
+      <p>This blog platform was designed to help content creators, small businesses, and thought leaders publish and manage their posts effortlessly. It's built with <strong>React</strong> on the frontend and <strong>Strapi</strong> as the headless CMS backend.</p>
     </div>
 
     <div class="section">
@@ -100,9 +202,7 @@
 
     <div class="section">
       <h2>Challenges Solved</h2>
-      <p>
-        Integrating a headless CMS like Strapi with React involved understanding how APIs work, managing dynamic routing, and securing CORS and image assets. I implemented clean UI layouts using Bootstrap's grid system and ensured the blog performs well on both desktop and mobile.
-      </p>
+      <p>Integrating a headless CMS like Strapi with React involved understanding how APIs work, managing dynamic routing, and securing CORS and image assets. I implemented clean UI layouts using Bootstrap's grid system and ensured the blog performs well on both desktop and mobile.</p>
     </div>
 
     <div class="section">
@@ -118,8 +218,8 @@
     <div class="section buttons">
       <h2>🧪 Live Demo & Code</h2>
       <a href="https://muema-william.netlify.app" target="_blank">View Live Site</a>
-      <a href="https://github.com/Nick-Maximillien/react-blog" target="_blank">GitHub React frontend Repository</a>
-      <a href="https://github.com/Nick-Maximillien/my-strapi-blog" target="_blank">GitHub Strapi backend Repo</a>
+      <a href="https://github.com/Nick-Maximillien/react-blog" target="_blank">GitHub Frontend</a>
+      <a href="https://github.com/Nick-Maximillien/my-strapi-blog" target="_blank">GitHub Backend</a>
     </div>
 
     <div class="section">
@@ -127,5 +227,6 @@
       <p>Let’s work together! <a href="contactPage.html">Contact me</a> to discuss your blog project.</p>
     </div>
   </div>
+
 </body>
 </html>

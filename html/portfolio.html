@@ -1,62 +1,115 @@
+<!DOCTYPE html>
 <html class="html" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="../css/styles1.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>portfolio</title>
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../css/styles1.css">
+
+  <style>
+    /* ONLY affects the Categories section */
+    .categories-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .category-box {
+      width: 27%;
+      text-align: center;
+    }
+
+    .category-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+    }
+
+    .category-box .caption {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      height: 50%;
+    }
+  </style>
 </head>
 <body class="body aboutBody">
-    <div class="container portfolioContainer col-md-12 col-sm-12 col-xs-12">
- <div style="position: relative;" class="row head portfoliohead col-md-12 col-sm-12 col-xs-12">
-    <figure class="col-md-2 col-sm-2 col-xs-2 logoFig"><img class="logo" src="../images/google.png" alt="" width="" height=""></figure>
-    <ul class="navList col-md-10 col-sm-10 col-xs-10">
+  <div class="container portfolioContainer col-md-12 col-sm-12 col-xs-12">
+
+    <div style="position: relative;" class="row head portfoliohead col-md-12 col-sm-12 col-xs-12">
+      <figure class="col-md-2 col-sm-2 col-xs-2 logoFig">
+        <img class="logo" src="../images/google.png" alt="" />
+      </figure>
+      <ul class="navList col-md-10 col-sm-10 col-xs-10">
         <li class="nav about"><a class="navlink" href="../index.html">Home</a></li>
         <li class="nav portfolio"><a class="navlink" href="about.html">About</a></li>
         <li class="nav blog"><a class="navlink active blog" href="">Portfolio</a></li>
         <li class="nav contact"><a class="navlink" href="contactPage.html">Contact</a></li>
-    </ul>
- </div>
- <div class="col-md-12 col-sm-12 col-xs-12 aboutMeGridA">
-    <h1 class="aboutMeTitle">Portfolio.</h1>
-    <p class="aboutMeText1">Check out some of my latest projects</p>
-    <p class="aboutMeText2">
+      </ul>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 aboutMeGridA">
+      <h1 class="aboutMeTitle">Portfolio.</h1>
+      <p class="aboutMeText1">Check out some of my latest projects</p>
+      <p class="aboutMeText2">
         I work with individuals, startups, SMEs, institutions and organizations to deliver Front-end UI/UX development
         and Graphic Design systems. I study the application of AI and Blockchain technologies and how 
         they can be utilized to increase value in enterprise systems.
-    </p>
-</div>
-<section class="row sectionA col-md-12 col-sm-12 col-xs-12">
-    <figure class="sideBarFig1 col-md-2 col-sm-2 col-xs-2"><img class="sideBar1" src="../images/designe.png" alt=""></figure>
-    <div class="row midBar col-md-8 col-sm-8 col-xs-8">
-        <h3 class="projects"><b class="recentProjects">Categories</b></h3>
-        <figure class="iframe1"><img class="project1" src="../images/ui.png" alt="" width="" height="" /><figcaption class="caption">UI/UX</figcaption></figure>
-        <figure class="iframe2"><img class="project2" src="../images/design.jpg" alt="" width="" height="" /><figcaption class="caption">Graphic Design</figcaption></figure>
-      </div>
-        <figure class="sideBarFig2 col-md-2 col-sm-2 col-xs-2"><img class="sideBar2" src="../images/code.png" alt=""></figure>
-</section>
-<section class="row sectionB work col-md-12 col-sm-12 col-xs-12">
-    <h3 class="projects work"><b class="recentProjects work">Projects</b></h3>
-</section>
-<section class="row secC col-md-12 col-sm-12 col-xs-12">
-    <figure class="iframe2 projA col-md-6 col-sm-6 col-xs-6">
-        <a href="react-blog.html"><img class="project1 projImg" src="../images/finallogo.png"  />
-        <figcaption class="caption projCaption">React Blog App</figcaption></a>
-        </figure>
-            <figure class="iframe2 projA col-md-6 col-sm-6 col-xs-6">
-        <a href="store.html"><img class="project1 projImg" src="../images/finallogo.png"  />
-        <figcaption class="caption projCaption">Smart Agrovet</figcaption></a>
-        </figure><br>
-            <figure class="iframe2 projA col-md-6 col-sm-6 col-xs-6">
-        <a href="dapp.html"><img class="project1 projImg" src="../images/finallogo.png"  />
-        <figcaption class="caption projCaption">Decentralized Voting Platform</figcaption></a>
-        </figure>
-            <figure class="iframe2 projB col-md-6 col-sm-6 col-xs-6">
-                <a href="inProgress.html"><img class="project2 projImg" src="../images/webChart.png" />
-                <figcaption class="caption projCaption">AI For E-Commerce</figcaption></a>
-        </figure>
-</section>
+      </p>
     </div>
+
+    <section class="row sectionA categories col-md-12 col-sm-12 col-xs-12">
+      <h3 class="projects work"><b class="">Categories</b></h3>
+      <div class="categories-wrapper">
+       <a href="webDev.html" class="category-box">
+          <img class="webimg" src="../images/ui.png" alt="Web Development" />
+          <div class="caption">Web Development</div></a>
+        <a href="ai.html" class="category-box">
+          <img class="aiimg" src="../images/design.jpg" alt="Artificial Intelligence" />
+          <div class="caption">Artificial Intelligence</div>
+        </a>
+        <a href="blockchain.html" class="category-box">
+          <img class="blockimg" src="../images/design.jpg" alt="Blockchain" />
+          <div class="caption">Blockchain</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="row sectionB work col-md-12 col-sm-12 col-xs-12">
+      <h3 class="projects work"><b class="recentProjects work">Projects</b></h3>
+    </section>
+
+    <section class="row secC works col-md-12 col-sm-12 col-xs-12">
+      <figure class="iframe2 projA col-md-5 col-sm-5 col-xs-5">
+        <a href="react-blog.html"><img class="project1 projImg" src="../images/blog.png" />
+        <figcaption class="caption projCaption"><b class="mainCap">React Blog App</b><br>
+            <span>A modern blog platform built with React and powered by Strapi CMS, featuring dynamic content management, responsive UI, and scalable architecture.</span>
+        </figcaption></a>
+      </figure>
+      <figure class="iframe2 projA agros col-md-5 col-sm-5 col-xs-5">
+        <a href="store.html"><img class="project1 projImg" src="../images/agroshop.png" />
+        <figcaption class="caption projCaption"><b class="mainCap">Smart Agrovet</b><br>
+            <span>An e-commerce web app tailored for agrovet businesses, offering inventory management, customer ordering, and smart checkout functionality for agri-shops, suppliers and  farmers</span>
+        </figcaption></a>
+      </figure><br>
+      <figure class="iframe2 decent projA col-md-5 col-sm-5 col-xs-5">
+        <a href="dapp.html"><img class="project1 projImg" src="../images/dapp.png" />
+        <figcaption class="caption projCaption"><b class="mainCap">Decentralized Voting Platform</b><br>
+            <span>A blockchain-based voting system designed to ensure transparent, tamper-proof elections using smart contracts and a decentralized ledger.</span>
+        </figcaption></a>
+      </figure>
+      <figure class="iframe2 commerce projA col-md-5 col-sm-5 col-xs-5">
+        <a href="inProgress.html"><img class="project2 projImg" src="../images/webChart.png" />
+        <figcaption class="caption projCaption"><b class="mainCap">AI For E-Commerce</b><br>
+            <span>An upcoming intelligent shopping platform that leverages AI to recommend products, analyze trends, and automate customer experience for online stores.</span>
+        </figcaption></a>
+      </figure>
+    </section>
+
+  </div>
 </body>
 <footer class="footer">&copy;2025 | ithoka Microsystems</footer>
 </html>
