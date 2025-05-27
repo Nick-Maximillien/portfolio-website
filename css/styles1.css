@@ -1875,6 +1875,92 @@ img.email {
     margin: 0% 0% 0% 0%;
     padding: 2% 2% 2% 2%;
 }
+.projec {
+    font-size: 100%;
+    width: 80%;
+    height: 120%;
+    margin: 0% 0% 5% 5%;
+    padding: 2% 0% 0% 0%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.hire {
+    width: 70%;
+    background-color: bisque;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 7px;
+    margin-top: 2%;
+}
+.iframe {
+        margin: 0% 0% 0% 5%;
+}
+.iframe1, .iframe2 {
+    width: 49%;
+    height: 70%;
+    background-color: antiquewhite;
+    color: black;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 5%;
+    border-width: 10px;
+}
+.iframe1 {
+    width: 40%;
+    height: 60%;
+    margin: 0% 0% 0% 5%;
+}
+.iframe2 {
+    padding: 5%;
+    margin: 25px;
+    position: relative;
+    right: 5%;
+}
+.see-more-link {
+  display: inline-block;
+  margin: 5%;
+  font-size: 150%;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.see-more-link::after {
+  content: "→";
+  position: absolute;
+  right: -25px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.see-more-link:hover {
+  padding-right: 30px;
+}
+
+.see-more-link:hover::after {
+  opacity: 1;
+  right: 0;
+}
+
+.agros {
+    margin: 0% 0% 0% 0%;
+    position: relative;
+    left: 2%;
+}
+.works {
+    padding: 5px;
+    position: relative;
+    left: 13px;
+}
+.decent, .commerce {
+    position: relative;
+    top: 15px;
+}
 .smedia {
     color: cyan;
     text-decoration: none;
@@ -1919,6 +2005,12 @@ a.smedia:hover {
     margin: 0% 0% 0% 0%;
     position: relative;
     left: 5%;
+}
+.mainCap {
+    font-size: 150%;
+    font-weight: bold;
+    color: red;
+    margin: 0 0 4 0;
 }
 .portfoliohead {
     height: 60px;
