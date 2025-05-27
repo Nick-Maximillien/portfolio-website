@@ -50,7 +50,7 @@ a {
     margin: 0% 0% 0% 0%;
     padding: 0% 0% 0% 0%;
     font-size: 100%;
-    background-image: url('https://nick-maximillien.netlify.app/images/webdevbg1.jpg');
+    background-color: blue;
 }
 .container {
     width: 100%;
@@ -1318,7 +1318,7 @@ a.smedia:hover {
         margin: 0% 0% 0% 0%;
         padding: 0% 0% 0% 0%;
         font-size: 100%;
-        background-image: url('https://nick-maximillien.netlify.app/images/webdevbg1.jpg');
+        background-color: blue;
     }
     .container {
         width: 101%;
