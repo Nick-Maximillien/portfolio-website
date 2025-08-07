@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanScope Chain | Blockchain Land Use Approvals</title>
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="../css/styles1.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #f4faff;
+      color: #1a1a1a;
+      margin: 0;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid white;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .header h1 {
+      font-size: 2.3rem;
+      color: #1a73e8;
+      margin-bottom: 0.3rem;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    h2 {
+      color: #003366;
+      border-left: 4px solid #0074d9;
+      padding-left: 10px;
+      margin-top: 2rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .screenshot {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 6px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      padding: 10px 16px;
+      background: #003366;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #0052cc;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem 0;
+      background: #dceeff;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 1.7rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      iframe {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contactPage.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="header">
+      <img src="../images/urbanscope.png" alt="UrbanScope Banner">
+      <h1>UrbanScope Chain</h1>
+      <p>A blockchain-based system for approving and tracking urban land development proposals.</p>
+    </div>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        UrbanScope is a decentralized land use approval system that enables urban authorities to record, manage, and track land development proposals on Ethereum. With admin-only controls for submitting, approving, and rejecting proposals, it brings traceability and trust to the often opaque urban planning process.
+      </p>
+    </section>
+
+    <section>
+      <h2>Tech Stack</h2>
+      <ul>
+        <li><strong>Frontend:</strong> Next.js + Tailwind CSS</li>
+        <li><strong>Smart Contract:</strong> Solidity (Deployed to Sepolia Testnet)</li>
+        <li><strong>Integration:</strong> Ethers.js + MetaMask</li>
+        <li><strong>Metadata Links:</strong> IPFS-ready proposal URIs</li>
+        <li><strong>Hosting:</strong> Vercel</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Smart Contract Highlights</h2>
+      <ul>
+        <li>✅ Admin-only proposal creation</li>
+        <li>✅ Land use types and location descriptions</li>
+        <li>✅ `approveChange()` and `rejectChange()` to finalize decisions</li>
+        <li>✅ Event logs for transparency (`ProposalSubmitted`, `ProposalApproved`, etc.)</li>
+        <li>✅ Read-only access to all proposals on-chain</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>UI Preview</h2>
+      <img src="../images/urbanscope2.png" alt="Proposal Table View" class="screenshot">
+      <img src="../images/urbanscope1.png" alt="Proposal Submission Form" class="screenshot">
+    </section>
+
+    <section>
+      <h2>📽️ Walkthrough Video</h2>
+      <iframe src="https://www.youtube.com/embed/Jyge3qTS46k" allowfullscreen></iframe>
+    </section>
+
+    <section class="links">
+      <h2>Live Links</h2>
+      <a href="https://urbanscope.vercel.app" target="_blank">🌐 Live DApp</a>
+      <a href="https://sepolia.etherscan.io/address/0x191dfa511e14cbdf4298edcc5b15fc1f0353335a" target="_blank">🔍 Etherscan</a>
+      <a href="https://github.com/Nick-Maximillien/urbanscope" target="_blank">📦 GitHub</a>
+    </section>
+
+    <section>
+      <h2>My Role</h2>
+      <p>
+        I built the smart contract, implemented the front-end interface, and deployed the platform to Vercel and Sepolia. I also handled wallet integration, metadata design, and structured the proposal flow to align with real-world urban planning workflows.
+      </p>
+    </section>
+
+    <section>
+      <h2>Vision</h2>
+      <p>
+        UrbanScope demonstrates how blockchain can support land governance by adding transparency and auditability. In contexts like Africa where urban expansion often lacks oversight, this project is a blueprint for decentralized civic infrastructure.
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2025 | Nick Muthoki
+    </footer>
+  </div>
+</body>
+</html>

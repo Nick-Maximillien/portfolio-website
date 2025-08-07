@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartLands – Blockchain Land Registry</title>
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="../css/styles1.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      background: #f2f8ff;
+      color: #1a1a1a;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid white;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #1a73e8;
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      border-left: 4px solid #003366;
+      padding-left: 10px;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #003366;
+      font-size: 1.5rem;
+    }
+
+    p, ul {
+      font-size: 1rem;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .screenshot {
+      width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0.3rem 1rem 0.8rem 0;
+      background: #003366;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+
+    .links a:hover {
+      background-color: #0052cc;
+    }
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #e2ecf9;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 1.7rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      iframe {
+        height: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html" class="">Portfolio</a>
+        <a href="contactPage.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="header">
+      <img src="../images/ardhichain.png" alt="SmartLands Banner" />
+      <h1>SmartLands (ArdhiChain)</h1>
+      <p>Blockchain Land Registry – Mint and Manage Property NFTs on Ethereum</p>
+    </div>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        ArdhiChain is a decentralized land registry system deployed on the Ethereum blockchain. It empowers authorized admins to mint land title NFTs containing verified metadata such as location, title ID, and parcel size. These NFTs can be securely transferred via smart contracts, enabling transparent, tamper-proof land management.
+      </p>
+    </section>
+
+    <section>
+      <h2>Tech Stack</h2>
+      <ul>
+        <li><strong>Smart Contract:</strong> Solidity using OpenZeppelin (ERC721)</li>
+        <li><strong>Frontend:</strong> Next.js & Ethers.js</li>
+        <li><strong>Wallet Integration:</strong> MetaMask (via ethers BrowserProvider)</li>
+        <li><strong>Deployment:</strong> Infura + Sepolia Testnet</li>
+        <li><strong>Storage:</strong> IPFS for token metadata</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Core Features</h2>
+      <ul>
+        <li>✅ Admin-only minting of unique land NFTs</li>
+        <li>✅ Title metadata includes titleID, location, and parcel size</li>
+        <li>✅ Transfer restricted to admin for legal compliance</li>
+        <li>✅ Public read access via `getLandDetails()`</li>
+        <li>✅ Metadata stored on IPFS</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>UI Preview</h2>
+      <img src="../images/ardhichain1.png" alt="Minted Table" class="screenshot">
+      <img src="../images/ardhichain2.png" alt="MetaMask Integration" class="screenshot">
+    </section>
+
+    <section>
+      <h2>📽️ Video Walkthrough</h2>
+      <iframe src="https://www.youtube.com/embed/zbSPnmzQzT8" allowfullscreen></iframe>
+    </section>
+
+    <section class="links">
+      <h2>Links</h2>
+      <a href="https://ardhi-chain.netlify.app" target="_blank">🌐 Live DApp</a>
+      <a href="https://sepolia.etherscan.io/address/0x859fa91b61d4723dd6f9d27e990b99dc479fdc7d" target="_blank">🔍 Etherscan Contract</a>
+      <a href="https://github.com/Nick-Maximillien/ardhiChain" target="_blank">📦 GitHub Source Code</a>
+    </section>
+
+    <section>
+      <h2>My Role</h2>
+      <p>
+        I designed and implemented the smart contract, developed the frontend UI using Next.js, and integrated MetaMask for wallet connectivity. I also deployed the DApp on Netlify, Infura and sepolia blockchain network, wrote end-to-end logic, and tested admin functions like minting and restricted transfers.
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2025 | Nick Muthoki
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,92 +1,266 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="../css/styles1.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: #f4f8fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #1a73e8;
+      margin-bottom: 1rem;
+    }
+
+    .inTouch {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .contact-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .contact-icons a {
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-icons img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .contact-icons span {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 0.25rem;
+      font-family: inherit;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    input[type="submit"] {
+      background-color: #1a73e8;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1558b0;
+    }
+
+    blockquote {
+      margin-top: 3rem;
+      text-align: center;
+      font-style: italic;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .founder {
+      font-weight: bold;
+      margin-top: 0.5rem;
+      color: #1a73e8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f0f0f0;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .contact-icons {
+        gap: 1rem;
+      }
+
+      form {
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
-<body class="body col-md-12 col-sm-12 col-xs-12"">
-    <div class="container contactPg col-md-12 col-sm-12 col-xs-12">
-        <div class="row head col-md-12 col-sm-12 col-xs-12">
-            <figure class="col-md-2 col-sm-2 col-xs-2 logoFig"><img class="logo" src="../images/google.png" alt="" width="" height=""></figure>
-            <ul class="navList col-md-10 col-sm-10 col-xs-10">
-                <li class="nav about"><a class="navlink" href="../index.html">Home</a></li>
-                <li class="nav portfolio"><a class="navlink" href="about.html">About</a></li>
-                <li class="nav blog"><a class="navlink blog" href="portfolio.html">Portfolio</a></li>
-                <li class="nav contact"><a class="active navlink" href="contactPage.html">Contact</a></li>
-            </ul>
-         </div>
-   <div class="gridAcontainer col-md-12 col-sm-12 col-xs-12"><h1 class="contactHead">Contact</h1></div>
-   <div class="gridBcontainer col-md-12 col-sm-12 col-xs-12">
-   <p class="inTouch">Get in touch with me via social media or send me an email.</p>
-   </div>
-   <div class="figures">
-    <a href="mailTo:nicholasmuthoki@gmail.com"><figure class="gridDcontainer google col-md-12 col-sm-12 col-xs-12">
-    <img class="facebook email" src="../images/email1.png" alt=""><span class="span">Mail</span>
-   </figure></a>
-   <a href="https://agrosight-ai.vercel.app/message"><figure class="gridDcontainer col-md-12 col-sm-12 col-xs-12">
-    <img class="facebook" src="../images/whatsapp.png" alt=""><span class="span">Whatsapp</span>
-   </figure></a>
-    <a href="https://www.linkedin.com/in/nicholas-muthoki-5642a7288"><figure class="gridEcontainer col-md-12 col-sm-12 col-xs-12">
-    <img class="linkedin" src="../images/linkedIn1.png" alt=""><span class="span">LinkedIn</span>
-   </figure></a>
-    <a href="https://github.com/Nick-Maximillien"><figure class="gridDcontainer col-md-12 col-sm-12 col-xs-12">
-    <img class="facebook" src="../images/notion.png" alt=""><span class="span">Notion</span>
-   </figure></a>
-   <a href="https://github.com/Nick-Maximillien"><figure class="gridDcontainer col-md-12 col-sm-12 col-xs-12">
-    <img class="facebook" src="../images/github.png" alt=""><span class="span">Github</span>
-   </figure></a>
-   </div>
-   <div class="row gridF col-md-12 col-sm-12 col-xs-12">
-    <figure class="asideFig1 col-md-2 col-sm-2 col-xs-2"><img class="aside1" src="../images/designe.png" alt=""></figure>
-    <div class="gridG col-md-8 col-sm-8 col-xs-8">
-        <h1 class="emailTitle">Send me an E-mail</h1>
-        <form class="nameAndMessage" onsubmit="sendEmail(event)">
-            <label class="labels" for="name">Name:<br /> 
-                <input class="name" type="text" id="name">
-            </label><br />
-            <label class="labels" for="email">Email:<br />
-                <input class="mail" type="email" id="email">
-            </label><br />
-            <label class="labels" for="message">Message:<br />
-                <textarea class="message" id="message"></textarea>
-            </label><br />
-            <input class="send" type="submit" value="Send">
-        </form>
-        
-        <script>
-            (function() {
-                emailjs.init("service_iwhkx4m"); // Replace with your EmailJS User ID
-            })();
-        
-            function sendEmail(event) {
-                event.preventDefault();
-        
-                let templateParams = {
-                    name: document.getElementById("name").value,
-                    email: document.getElementById("email").value,
-                    message: document.getElementById("message").value
-                };
-        
-                emailjs.send("service_iwhkx4m", "template_2qxlrws", templateParams)
-                    .then(function(response) {
-                        alert("Message Sent Successfully!");
-                    }, function(error) {
-                        alert("Failed to send message. Try again later.");
-                    });
-            }
-        </script>        
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a class="active" href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Contact</h1>
+    <p class="inTouch">Get in touch via email or social links below. I usually respond within a day.</p>
+
+    <div class="contact-icons">
+      <a href="mailto:nicholasmuthoki@gmail.com">
+        <img src="../images/email1.png" alt="Email">
+        <span>Email</span>
+      </a>
+      <a href="https://agrosight-ai.vercel.app/message" target="_blank">
+        <img src="../images/whatsapp.png" alt="WhatsApp">
+        <span>WhatsApp</span>
+      </a>
+      <a href="https://www.linkedin.com/in/nicholas-muthoki-5642a7288" target="_blank">
+        <img src="../images/linkedIn1.png" alt="LinkedIn">
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://www.notion.so/Nick-s-Lab" target="_blank">
+        <img src="../images/notion.png" alt="Notion">
+        <span>Notion</span>
+      </a>
+      <a href="https://github.com/Nick-Maximillien" target="_blank">
+        <img src="../images/github.png" alt="GitHub">
+        <span>GitHub</span>
+      </a>
     </div>
-        <figure class="asideFig2 col-md-2 col-sm-2 col-xs-2"><img class="aside2" src="../images/code.png" alt=""></figure>
-</div>
-<section class="row sectionD col-md-12 col-sm-12 col-xs-12">
-    <blockquote class="blockquote col-sm-12 col-xs-12">"The future belongs to those who believe in the beauty of their dreams."<br><p class="founder">- Eleanor Roosevelt</p>
+
+    <form onsubmit="sendEmail(event)">
+      <h2 style="margin-bottom: 1rem; color: #1a73e8;">Send a Message</h2>
+      <label for="name">Name
+        <input type="text" id="name" required />
+      </label>
+
+      <label for="email">Email
+        <input type="email" id="email" required />
+      </label>
+
+      <label for="message">Message
+        <textarea id="message" required></textarea>
+      </label>
+
+      <input type="submit" value="Send">
+    </form>
+
+    <blockquote>
+      "The future belongs to those who believe in the beauty of their dreams."
+      <p class="founder">– Eleanor Roosevelt</p>
     </blockquote>
-    </section>
-</div>
+  </div>
+
+  <footer>&copy; 2025 | Nick Muthoki</footer>
+
+  <script>
+    (function () {
+      emailjs.init("service_iwhkx4m"); // Replace with your actual EmailJS ID
+    })();
+
+    function sendEmail(event) {
+      event.preventDefault();
+      const templateParams = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+      };
+
+      emailjs.send("service_iwhkx4m", "template_2qxlrws", templateParams)
+        .then(function () {
+          alert("Message Sent Successfully!");
+          document.querySelector("form").reset();
+        }, function () {
+          alert("Failed to send message. Try again later.");
+        });
+    }
+  </script>
+
 </body>
-<footer class="footer contactPgFooter">&copy;2025 | Nick Muthoki</footer>
 </html>

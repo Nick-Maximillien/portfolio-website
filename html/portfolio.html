@@ -1,115 +1,255 @@
 <!DOCTYPE html>
-<html class="html" lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>portfolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="../css/styles1.css">
-
   <style>
-    /* ONLY affects the Categories section */
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: #e9f1fb;
+      color: #222;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h1, h2, h3 {
+      color: #1a73e8;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
     .categories-wrapper {
       display: flex;
       justify-content: center;
-      gap: 10px;
       flex-wrap: wrap;
-      margin-top: 20px;
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
 
     .category-box {
-      width: 27%;
+      width: 30%;
       text-align: center;
     }
 
     .category-box img {
       width: 100%;
-      height: auto;
-      border-radius: 30px;
+      border-radius: 16px;
+      border: 1px solid #ccc;
     }
 
     .category-box .caption {
-      margin-top: 10px;
-      font-weight: bold;
-      font-size: 16px;
-      height: 50%;
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+
+    .project-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .project {
+      flex: 1 1 45%;
+      max-width: 450px;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .project figcaption {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #f0f0f0;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .category-box {
+        width: 80%;
+      }
+      .project {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
-<body class="body aboutBody">
-  <div class="container portfolioContainer col-md-12 col-sm-12 col-xs-12">
+<body>
 
-    <div style="position: relative;" class="row head portfoliohead col-md-12 col-sm-12 col-xs-12">
-      <figure class="col-md-2 col-sm-2 col-xs-2 logoFig">
-        <img class="logo" src="../images/google.png" alt="" />
-      </figure>
-      <ul class="navList col-md-10 col-sm-10 col-xs-10">
-        <li class="nav about"><a class="navlink" href="../index.html">Home</a></li>
-        <li class="nav portfolio"><a class="navlink" href="about.html">About</a></li>
-        <li class="nav blog"><a class="navlink active blog" href="">Portfolio</a></li>
-        <li class="nav contact"><a class="navlink" href="contactPage.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12 aboutMeGridA">
-      <h1 class="aboutMeTitle">Portfolio.</h1>
-      <p class="aboutMeText1">Check out some of my latest projects</p>
-      <p class="aboutMeText2">
-        I work with individuals, startups, SMEs, institutions and organizations to deliver Front-end UI/UX, Backend web development, 
-        AI integration and Blockchain solutions. I study the application of AI and Blockchain technologies and how 
-        they can be utilized to increase value in enterprise systems.
-      </p>
-    </div>
-
-    <section class="row sectionA categories col-md-12 col-sm-12 col-xs-12">
-      <h3 class="projects work"><b class="">Categories</b></h3>
-      <div class="categories-wrapper">
-       <a href="webDev.html" class="category-box">
-          <img class="webimg" src="../images/ui.png" alt="Web Development" />
-          <div class="caption">Web Dev</div></a>
-        <a href="ai.html" class="category-box">
-          <img class="aiimg" src="../images/dash5.png" alt="Artificial Intelligence" />
-          <div class="caption">AI</div>
-        </a>
-        <a href="blockchain.html" class="category-box">
-          <img class="blockimg" src="../images/dash.png" alt="Blockchain" />
-          <div class="caption">Blockchain</div>
-        </a>
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#" class="active">Portfolio</a>
+        <a href="contactPage.html">Contact</a>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <section class="row sectionB work col-md-12 col-sm-12 col-xs-12">
-      <h3 class="projects work"><b class="recentProjects work">Projects</b></h3>
-    </section>
+  <div class="container">
+    <h1>Portfolio</h1>
+    <p>I work with individuals, startups, SMEs, and institutions to deliver Front-end UI/UX, backend systems, AI integrations, and blockchain-based solutions. I explore how modern technologies can be used to increase value and transparency in enterprise systems.</p>
 
-    <section class="row secC works col-md-12 col-sm-12 col-xs-12">
-      <figure class="iframe2 projA col-md-5 col-sm-5 col-xs-5">
-        <a href="agrosight.html"><img class="project1 projImg" src="../images/shot3.png" />
-        <figcaption class="caption projCaption"><b class="mainCap">AI for Agriculture</b><br>
-            <span>A modern blog platform built with React and powered by Strapi CMS, featuring dynamic content management, responsive UI, and scalable architecture.</span>
-        </figcaption></a>
-      </figure>
-      <figure class="iframe2 projA agros col-md-5 col-sm-5 col-xs-5">
-        <a href="dapp.html"><img class="project1 projImg" src="../images/dash8.png" />
-        <figcaption class="caption projCaption"><b class="mainCap">Voting DApp</b><br>
-            <span>A blockchain-based voting system designed to ensure transparent, tamper-proof elections using smart contracts and a decentralized ledger.</span>
-        </figcaption></a>
-      </figure><br>
-      <figure class="iframe2 decent projA col-md-5 col-sm-5 col-xs-5">
-        <a href="store.html"><img class="project1 projImg" src="../images/agroshop.png" />
-        <figcaption class="caption projCaption"><b class="mainCap">A Smart Agrovet</b><br>
-            <span>An e-commerce web app tailored for agrovet businesses, offering inventory management, customer ordering, and smart checkout functionality for agri-shops, suppliers and  farmers</span>
-        </figcaption></a>
-      </figure>
-      <figure class="iframe2 commerce projA col-md-5 col-sm-5 col-xs-5">
-        <a href="inProgress.html"><img class="project2 projImg" src="../images/webChart.png" />
-        <figcaption class="caption projCaption"><b class="mainCap">AI For E-Commerce</b><br>
-            <span>An upcoming intelligent shopping platform that leverages AI to recommend products, analyze trends, and automate customer experience for online stores.</span>
-        </figcaption></a>
-      </figure>
-    </section>
+    <h2>Categories</h2>
+    <div class="categories-wrapper">
+      <a href="webDev.html" class="category-box">
+        <img src="../images/ui.png" alt="Web Dev" />
+        <div class="caption">Web Development</div>
+      </a>
+      <a href="ai.html" class="category-box">
+        <img src="../images/dash5.png" alt="AI" />
+        <div class="caption">Artificial Intelligence</div>
+      </a>
+      <a href="blockchain.html" class="category-box">
+        <img src="../images/dash.png" alt="Blockchain" />
+        <div class="caption">Blockchain</div>
+      </a>
+    </div>
 
+    <h2>Projects</h2>
+    <div class="project-section">
+
+      <figure class="project">
+        <a href="agrosight.html">
+          <img src="../images/shot3.png" alt="AI for Agriculture" />
+          <figcaption>
+            <strong>AI for Agriculture</strong><br>
+            <p>A vision-based crop diagnosis tool deployed via WhatsApp and web to help farmers detect diseases using just photos.</p>
+          </figcaption>
+        </a>
+      </figure>
+
+      <figure class="project">
+        <a href="dapp.html">
+          <img src="../images/dash8.png" alt="Voting DApp" />
+          <figcaption>
+            <strong>Voting DApp</strong><br>
+            <p>A decentralized election platform for agricultural cooperatives using smart contracts on Ethereum (Sepolia testnet).</p>
+          </figcaption>
+        </a>
+      </figure>
+
+      <figure class="project">
+        <a href="store.html">
+          <img src="../images/agroshop.png" alt="Smart Agrovet" />
+          <figcaption>
+            <strong>Smart Agrovet</strong><br>
+            <p>An e-commerce inventory and order platform tailored for agrovet suppliers and farmers.</p>
+          </figcaption>
+        </a>
+      </figure>
+
+      <figure class="project">
+        <a href="inProgress.html">
+          <img src="../images/webChart.png" alt="AI for E-Commerce" />
+          <figcaption>
+            <strong>AI for E-Commerce</strong><br>
+            <p>A work-in-progress platform for AI-powered product recommendations, behavioral insights, and trend prediction.</p>
+          </figcaption>
+        </a>
+      </figure>
+
+      <figure class="project">
+        <a href="ardhichain.html">
+          <img src="../images/ardhichain.png" alt="ArdhiChain" />
+          <figcaption>
+            <strong>ArdhiChain</strong><br>
+            <p>Mint, manage, and transfer verifiable land titles as NFTs on Ethereum. Built with Solidity, OpenZeppelin, and Sepolia.</p>
+          </figcaption>
+        </a>
+      </figure>
+
+      <figure class="project">
+        <a href="urbanscope.html">
+          <img src="../images/urbanscope.png" alt="UrbanScope Chain" />
+          <figcaption>
+            <strong>UrbanScope Chain</strong><br>
+            <p>Proposal management for urban development approvals using smart contracts. Powered by Sepolia, Ethers.js & Next.js.</p>
+          </figcaption>
+        </a>
+      </figure>
+
+      <figure class="project">
+       <a href="react-blog.html">
+      <img src="../images/blog.png" alt="React Blog Project" />
+      <figcaption>
+      <strong>React Blog Platform</strong><br>
+      <p>A modern blog platform built with React and powered by Strapi CMS, featuring dynamic content management, responsive UI, and scalable architecture.</p>
+    </figcaption>
+    </a>
+    </figure>
+
+    </div>
   </div>
+
+  <footer>
+    &copy; 2025 | Nicholas Muthoki
+  </footer>
+
 </body>
-<footer class="footer">&copy;2025 | ithoka Microsystems</footer>
 </html>

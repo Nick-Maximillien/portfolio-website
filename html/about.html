@@ -1,113 +1,231 @@
-<html class="html" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="../css/styles1.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About</title>
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f8fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h1, h2 {
+      color: #1a73e8;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      border-left: 6px solid #1a73e8;
+      padding-left: 12px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    ul.List {
+      padding-left: 1.5rem;
+    }
+
+    ul.List li {
+      margin-bottom: 0.5rem;
+    }
+
+    .section {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    .skills-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .skills-section section {
+      flex: 1 1 45%;
+    }
+
+    .chartImg {
+      width: 100%;
+      margin-top: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    .random-facts ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .random-facts li::before {
+      content: '🌱';
+      margin-right: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eaeaea;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .skills-section section {
+        flex: 1 1 100%;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
-<body class="body aboutBody">
-    <div class="container aboutMeContainer col-md-12 col-sm-12 col-xs-12">
-        <div class="row head abouthead col-md-12 col-sm-12 col-xs-12">
-            <figure class="col-md-2 col-sm-2 col-xs-2 logoFig">
-                <img class="logo" src="../images/google.png" alt="" width="" height="">
-            </figure>
-            <ul class="navList col-md-10 col-sm-10 col-xs-10">
-                <li class="nav about"><a class="navlink" href="../index.html">Home</a></li>
-                <li class="nav portfolio"><a class="navlink active" href="">About</a></li>
-                <li class="nav blog"><a class="navlink blog" href="portfolio.html">Portfolio</a></li>
-                <li class="nav contact"><a class="navlink" href="contactPage.html">Contact</a></li>
-            </ul>
-        </div>
+<body>
 
-        <div class="col-md-12 col-sm-12 col-xs-12 aboutMeGridA">
-            <h1 class="aboutMeTitle">About.</h1>
-            <p class="aboutMeText1">
-                I'm a <b>Web Developer</b> passionate about creating clean, fast, and responsive websites and web apps that meet real business needs. With a strong foundation in <b class="black">HTML</b>, <b class="black">CSS</b>, <b class="black">JavaScript</b>, <b class="black">React</b>, <b class="black">Next.js</b>, <b class="black">Node.js</b>, and <b class="black">Django</b>, I build websites that are both visually appealing and technically sound.
-            </p>
-            <p class="aboutMeText2">
-                I specialize in front-end and full-stack development for individuals, startups, and small businesses. Whether you need a static landing page or a dynamic content management system, I focus on functionality, performance, and user experience.
-            </p>
-            <p class="aboutMeText2">
-                My goal is to help businesses grow their digital presence through practical, maintainable code and collaborative design. I'm currently growing my portfolio by building real-world projects and partnering with clients to bring their visions to life.
-            </p>
-        </div>
-                <!-- New Services Section -->
-        <div class="col-md-12 col-sm-12 col-xs-12 aboutMeGridServices">
-            <h1 class="skillsTitle">Services I Offer</h1>
-            <p class="aboutMeText2">
-                I provide custom web development services tailored for small businesses, startups, and individuals. Whether you're just starting out or need a redesign, I bring clarity and creativity to your digital vision. Here’s why you should hire me:
-            </p>
-            <ul class="List">
-                <li class="skillsList">✅ Custom Website Development (Landing pages, Company websites)</li>
-                <li class="skillsList">✅ React & Next.js Web Apps with SEO and speed in mind</li>
-                <li class="skillsList">✅ Django APIs for dynamic data and backend integration</li>
-                <li class="skillsList">✅ Responsive design for all screen sizes</li>
-                <li class="skillsList">✅ CMS integration for blogs and portfolios</li>
-                <li class="skillsList">✅ Website maintenance and performance optimization</li>
-                <li class="skillsList">✅ UX/UI Design using Figma and modern design systems</li>
-            </ul>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 aboutMeGridB">
-            <div class="row skills col-md-12 col-sm-12 col-xs-12">
-                <section class="techskills col-md-5 col-sm-5 col-xs-5">
-                    <h1 class="skillsTitle">Technical Skills</h1>
-                    <ul class="List">
-                        <li class="skillsList">HTML5</li>
-                        <li class="skillsList">CSS3</li>
-                        <li class="skillsList">Tailwind CSS</li>
-                        <li class="skillsList">Bootstrap CSS</li>
-                        <li class="skillsList">JavaScript</li>
-                        <li class="skillsList">React.js</li>
-                        <li class="skillsList">Next.js</li>
-                        <li class="skillsList">Node.js</li>
-                        <li class="skillsList">Python</li>
-                        <li class="skillsList">Django</li>
-                        <li class="skillsList">PostgreSQL</li>
-                        <li class="skillsList">Responsive Design</li>
-                        <li class="skillsList">Figma</li>
-                        <li class="skillsList">UI/UX</li>
-                        <li class="skillsList">Git & GitHub</li>
-                    </ul>
-                </section>
-                <section class="softskills col-md-5 col-sm-5 col-xs-5">
-                    <h1 class="skillsTitle">Soft Skills</h1>
-                    <ul class="List">
-                        <li class="skillsList">Creativity</li>
-                        <li class="skillsList">Collaboration</li>
-                        <li class="skillsList">Project Management</li>
-                        <li class="skillsList">Communication</li>
-                        <li class="skillsList">Problem Solving</li>
-                        <li class="skillsList">Client Relations</li>
-                        <li class="skillsList">Business Development</li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 aboutMeGridC">
-            <figure class="col-md-12 col-sm-12 col-xs-12 chartFig">
-                <img class="chartImg" src="../images/webChart.png" alt="">
-            </figure>
-        </div>
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a class="active" href="#">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contactPage.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-        <div class="col-md-12 col-sm-12 col-xs-12 aboutMeGridD">
-            <h1 class="randomFacts">Random facts</h1>
-            <p class="rFacts">
-                I read a lot of philosophy<br />
-                I'm into AI & Blockchain<br />
-                A walk in the woods, hell yeah!<br />
-                I want to live on Pandora<br />
-                I'm slightly addicted to <a class="smedia" href="">Twitter</a><br />
-                Seneca is my mentor
-            </p>
-        </div>
+  <div class="container">
+    <h1>About Me</h1>
 
-        <div class="col-md-12 col-sm-12 col-xs-12 aboutMeGridE">
-        <!--   <figure class="col-md-12 col-sm-12 col-xs-12 chartFig"> -->
-            <!--     <img class="chartImg" src="../images/ithoka.jpeg" alt=""> -->
-         <!--    </figure> -->
-        </div>
+    <div class="section">
+      <p>I’m <strong>Nicholas Muthoki</strong> — a full-stack developer and technical founder passionate about practical AI, computer vision, and blockchain. I build real-world systems that impact agriculture, e-commerce, and governance. I recently founded <strong>Agrosight AI</strong> — a computer vision platform that diagnoses crop diseases from images via WhatsApp and web for rural farmers in Kenya.</p>
+
+      <p>My work blends design, engineering, and machine learning. I write clean, functional code across the stack — from Dockerized APIs to AI models trained on hand-labeled datasets. My strength lies in fast deployment, self-reliance, and building what matters.</p>
+
+      <p>I believe Africa's future lies in decentralized, intelligent systems that scale quietly — especially in agriculture and micro-enterprise. That’s where I work.</p>
     </div>
+
+    <div class="section">
+      <h2>Services I Offer</h2>
+      <ul class="List">
+        <li>✅ AI-powered web & WhatsApp assistants</li>
+        <li>✅ YOLOv8 computer vision model training</li>
+        <li>✅ React/Next.js SEO-optimized frontends</li>
+        <li>✅ Django REST APIs + PostgreSQL dashboards</li>
+        <li>✅ Full Dockerized deployments (CI/CD ready)</li>
+        <li>✅ Blockchain dApps (Solidity, Infura, Remix)</li>
+        <li>✅ UI/UX Design using Figma + Tailwind systems</li>
+        <li>✅ Vision AI microservices & product launches</li>
+      </ul>
+    </div>
+
+    <div class="section skills-section">
+      <section>
+        <h2>Technical Skills</h2>
+        <ul class="List">
+          <li>HTML5 / CSS3 / Tailwind / Bootstrap</li>
+          <li>JavaScript / TypeScript</li>
+          <li>React.js / Next.js</li>
+          <li>Python / Django REST Framework</li>
+          <li>PostgreSQL / Redis</li>
+          <li>YOLOv8 / OpenCV / Albumentations</li>
+          <li>FastAPI / Celery / Docker</li>
+          <li>Solidity / Ethers.js / Infura / Remix</li>
+          <li>Git / GitHub / Bash / Linux</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Soft Skills</h2>
+        <ul class="List">
+          <li>🧠 Deep focus & monk-like execution</li>
+          <li>🧭 Vision clarity & system thinking</li>
+          <li>🧱 Technical communication</li>
+          <li>👨🏾‍💻 Leading by building</li>
+          <li>🌍 Outreach, onboarding & training</li>
+          <li>🤝 Client relations & business dev</li>
+        </ul>
+      </section>
+    </div>
+
+    <img class="chartImg" src="../images/webChart.png" alt="Analytics dashboard" />
+
+    <div class="section random-facts">
+      <h2>Random Facts</h2>
+      <ul class="List">
+        <li>I read Stoic philosophy daily</li>
+        <li>I fast, code, and sip black tea like a monk</li>
+        <li>I believe in invisible AI — intelligence without form</li>
+        <li>I’m building CV Labs Ke to scale AI across rural Africa</li>
+        <li>I admire Marcus Aurelius, Seneca, and Elon — in that order</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 | Nick Muthoki
+  </footer>
+
 </body>
-<footer class="footer contactPgFooter">&copy;2025 | ithoka Microsystems</footer>
 </html>

@@ -1,84 +1,159 @@
 <!DOCTYPE html>
-<html class="html" lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Web Development Projects</title>
   <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="../css/styles1.css">
-
   <style>
-    .categories-wrapper {
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: #e9f1fb;
+      color: #222;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .navbar {
       display: flex;
-      justify-content: center;
-      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      border-bottom: 2px solid white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h1, h2 {
+      color: #1a73e8;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .project-section {
+      display: flex;
       flex-wrap: wrap;
-      margin-top: 20px;
+      gap: 2rem;
+      margin-top: 2rem;
     }
 
-    .category-box {
-      width: 30%;
-      text-align: center;
+    .project {
+      max-width: 450px;
+      flex: 1 1 45%;
     }
 
-    .category-box img {
+    .project img {
       width: 100%;
-      height: auto;
-      border-radius: 30px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
     }
 
-    .category-box .caption {
-      margin-top: 10px;
-      font-weight: bold;
-      font-size: 16px;
-      height: 50%;
+    .project figcaption {
+      margin-top: 0.5rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #f0f0f0;
+      margin-top: 4rem;
     }
   </style>
 </head>
-<body class="body aboutBody">
-  <div class="container portfolioContainer col-md-12 col-sm-12 col-xs-12">
+<body>
 
-    <div style="position: relative;" class="row head portfoliohead col-md-12 col-sm-12 col-xs-12">
-      <figure class="col-md-2 col-sm-2 col-xs-2 logoFig">
-        <img class="logo" src="../images/google.png" alt="" />
+  <header>
+    <nav class="navbar">
+      <img class="logo" src="../images/google.png" alt="Logo" />
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="contactPage.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Web Development Projects</h1>
+    <p>Explore modern front-end applications and full-stack implementations. These projects highlight clean user interfaces, responsive design systems, and the integration of powerful backend services like CMS and databases.</p>
+
+    <h2>Featured Projects</h2>
+    <div class="project-section">
+      <figure class="project">
+        <a href="react-blog.html">
+          <img src="../images/blog.png" alt="React Blog App Screenshot" />
+          <figcaption>
+            <strong>React Blog App</strong><br>
+            <p>A modern blog platform built with React and powered by Strapi CMS, featuring dynamic content management, responsive UI, and scalable architecture.</p>
+          </figcaption>
+        </a>
       </figure>
-      <ul class="navList col-md-10 col-sm-10 col-xs-10">
-        <li class="nav about"><a class="navlink" href="../index.html">Home</a></li>
-        <li class="nav portfolio"><a class="navlink" href="about.html">About</a></li>
-        <li class="nav blog"><a class="navlink active blog" href="portfolio.html">Portfolio</a></li>
-        <li class="nav contact"><a class="navlink" href="contactPage.html">Contact</a></li>
-      </ul>
+
+      <figure class="project">
+        <a href="store.html">
+          <img src="../images/agroshop.png" alt="Agrovet Shop Screenshot" />
+          <figcaption>
+            <strong>Smart Agrovet</strong><br>
+            <p>An e-commerce platform tailored for agrovet businesses, offering inventory management, farmer-friendly ordering, and seamless checkout tailored to rural agri-shops.</p>
+          </figcaption>
+        </a>
+      </figure>
     </div>
-
-    <div class="col-md-12 col-sm-12 col-xs-12 aboutMeGridA">
-      <h1 class="aboutMeTitle">Web Development Projects.</h1>
-      <p class="aboutMeText1">Check out some of my work in web development</p>
-      <p class="aboutMeText2">
-        These projects showcase my skills in React, front-end development, and web design systems.
-        I also explore how modern tech stacks and AI/Blockchain can enhance value in web-based applications.
-      </p>
-    </div>
-
-    <section class="row sectionB work col-md-12 col-sm-12 col-xs-12">
-      <h3 class="projects work"><b class="recentProjects work">Web Dev Projects</b></h3>
-    </section>
-
-    <section class="row secC works col-md-12 col-sm-12 col-xs-12">
-      <figure class="iframe2 projA col-md-5 col-sm-5 col-xs-5">
-        <a href="react-blog.html"><img class="project1 projImg" src="../images/blog.png" />
-        <figcaption class="caption projCaption"><b class="mainCap">React Blog App</b><br>
-            <span>A modern blog platform built with React and powered by Strapi CMS, featuring dynamic content management, responsive UI, and scalable architecture.</span>
-        </figcaption></a>
-      </figure>
-      <figure class="iframe2 projA agros col-md-5 col-sm-5 col-xs-5">
-        <a href="store.html"><img class="project1 projImg" src="../images/agroshop.png" />
-        <figcaption class="caption projCaption"><b class="mainCap">Smart Agrovet</b><br>
-            <span>An e-commerce web app tailored for agrovet businesses, offering inventory management, customer ordering, and smart checkout functionality for agri-shops, suppliers, and farmers </span>
-        </figcaption></a>
-      </figure>
-    </section>
-
   </div>
+
+  <footer>
+    &copy; 2025 | Nicholas Muthoki
+  </footer>
+
 </body>
-<footer class="footer">&copy;2025 | ithoka Microsystems</footer>
 </html>

@@ -3,255 +3,209 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Voting DApp Case Study – Smart Agrovet</title>
-  <link rel="stylesheet" href="../css/styles1.css">
+  <title>Voting DApp – Agricultural Cooperatives</title>
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="../css/styles1.css" />
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #f2f8ff;
+      color: #1a1a1a;
       margin: 0;
-      padding: 1rem;
-      background-color: #f9f9f9;
-      color: #333;
     }
+
     .container {
       max-width: 960px;
       margin: auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 2rem 1rem;
     }
-    h1, h2 {
-      color: #111827;
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 1rem 0;
     }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.3rem;
-    }
-    h2 {
-      margin-top: 2rem;
-      color: #4f46e5;
-    }
-    p, li {
-      line-height: 1.7;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .tagline {
-      font-size: 1rem;
-      color: #6b7280;
-      margin-bottom: 1.5rem;
-    }
-    .section {
-      margin-top: 2rem;
-    }
-    .tech-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-    .tech-table th, .tech-table td {
-      border: 1px solid #e5e7eb;
-      padding: 0.75rem;
-      text-align: left;
-    }
-    .tech-table th {
-      background-color: #f3f4f6;
-    }
-    .buttons {
-      margin-top: 2rem;
+
+    .navbar {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1rem;
     }
-    .buttons a {
-      flex: 1 1 auto;
-      text-align: center;
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
       text-decoration: none;
-      padding: 0.75rem 1rem;
-      border-radius: 5px;
-      color: white;
-      background-color: #4f46e5;
+      font-weight: 500;
     }
-    .buttons a.github {
-      background-color: #1f2937;
+
+    .nav-links a.active {
+      border-bottom: 2px solid white;
     }
-    .badge {
-      display: inline-block;
-      background: #10b981;
-      color: white;
-      padding: 0.3rem 0.6rem;
-      border-radius: 5px;
-      font-size: 0.85rem;
-      margin-left: 0.5rem;
+
+    .header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+      color: #002c5a;
     }
-    .badge.gray {
-      background: #6b7280;
+
+    .header p {
+      font-size: 1.1rem;
+      color: #333;
     }
-    .warning {
-      background: #fff7ed;
-      border-left: 6px solid #f97316;
-      padding: 1rem;
-      margin: 2rem 0;
-      border-radius: 5px;
-      color: #7c2d12;
+
+    .project-banner {
+      width: 100%;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
-    .animated-feature {
-      transition: all 0.3s ease-in-out;
+
+    h2 {
+      color: #003366;
+      border-left: 4px solid #0074d9;
+      padding-left: 10px;
+      margin-top: 2rem;
     }
-    .animated-feature:hover {
-      transform: scale(1.03);
-      background: #eef2ff;
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
     }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
     .screenshot {
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
       margin-top: 1rem;
+      border-radius: 6px;
     }
-    .lighthouse {
-      background-color: #ecfdf5;
-      border: 1px solid #10b981;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-    .navList {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background: #fff;
-      margin-bottom: 1.5rem;
-      gap: 0.5rem;
-    }
-    .navList li {
-      margin: 0 0.5rem;
-    }
-    .navlink {
-      text-decoration: none;
-      padding: 0.5rem 1rem;
+
+    .links a {
       display: inline-block;
-      color: #4f46e5;
-      border-radius: 5px;
-    }
-    .navlink.active, .navlink:hover {
-      background: #4f46e5;
+      margin: 0.3rem 1rem 1rem 0;
+      background: #003366;
       color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-size: 0.95rem;
     }
-    @media (max-width: 576px) {
-      .buttons a {
-        flex: 1 1 100%;
-      }
-      .container {
-        padding: 1rem;
-      }
-      h1 {
-        font-size: 1.5rem;
+
+    .links a:hover {
+      background: #0052cc;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem 0;
+      background: #e2ecf9;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        height: 240px;
       }
     }
   </style>
 </head>
 <body>
-  <ul class="navList">
-    <li><a class="navlink" href="../index.html">Home</a></li>
-    <li><a class="navlink" href="about.html">About</a></li>
-    <li><a class="navlink active" href="portfolio.html">Portfolio</a></li>
-    <li><a class="navlink" href="contactPage.html">Contact</a></li>
-  </ul>
-  <div class="container">
-    <h1>🗳️ Voting DApp for Agricultural Cooperatives 
-      <span class="badge">Deployed on Vercel</span>
-    </h1>
-    <div class="tagline">
-      <strong>Client:</strong> Agrosight 
-      <span class="badge gray">Agrosight</span><br/>
-      <strong>Category:</strong> Blockchain | Agriculture | Governance | Voting System <br/>
-      <strong>Type:</strong> Blockchain-based Voting System (DApp) <br/>
-      <strong>Stack:</strong> Next.js, Solidity, Ethers.js, Remix, Infura, Sepolia Testnet, Metamask
+
+<header>
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contactPage.html">Contact</a>
     </div>
+  </nav>
+</header>
 
-    <div class="warning">
-      ⚠️ You’ll need a Metamask wallet connected to Sepolia Testnet to interact.
-    </div>
-
-    <h2>🔍 Overview</h2>
-    <p>This decentralized voting application (DApp) was originally built for agricultural cooperative societies, empowering members to vote on critical decisions securely and transparently...</p>
-
-    <h2>💡 Problem</h2>
-    <p>Traditional cooperative societies often lack transparent, secure voting mechanisms...</p>
-    <ul>
-      <li>Ensures only authorized members vote.</li>
-      <li>Enables vote delegation if a member is unavailable.</li>
-      <li>Provides real-time vote results in a visual dashboard.</li>
-      <li>Operates with complete transparency and immutability.</li>
-    </ul>
-
-    <h2>✅ Solution</h2>
-    <ul>
-      <li class="animated-feature">Smart Contract on Ethereum (Sepolia)...</li>
-      <li class="animated-feature">Next.js frontend...</li>
-      <li class="animated-feature">Real-time charts via Recharts...</li>
-      <li class="animated-feature">Wallet Integration...</li>
-      <li class="animated-feature">Role Control and Delegation...</li>
-      <li class="animated-feature">Live Blockchain Syncing...</li>
-    </ul>
-
-    <h2>🛠️ Tech Stack</h2>
-    <table class="tech-table">
-      <thead>
-        <tr>
-          <th>Layer</th>
-          <th>Tools Used</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Frontend</td><td>Next.js, TypeScript, Tailwind CSS</td></tr>
-        <tr><td>Blockchain</td><td>Solidity, Sepolia Testnet</td></tr>
-        <tr><td>Wallet</td><td>Ethers.js, Infura, Metamask</td></tr>
-        <tr><td>Visualization</td><td>Recharts</td></tr>
-        <tr><td>Testing & Deploy</td><td>Remix IDE, Sepolia Faucet</td></tr>
-      </tbody>
-    </table>
-
-    <h2>🔐 Key Features</h2>
-    <ul>
-      <li>Wallet Authentication via Metamask.</li>
-      <li>Role-Based Voting Rights.</li>
-      <li>Proposal Voting & Delegation Logic.</li>
-      <li>Live Vote Tracking with Charts.</li>
-      <li>Feedback with Toast Notifications.</li>
-    </ul>
-
-    <h2>🧠 Learnings & Outcome</h2>
-    <ul>
-      <li>Blockchain for tamper-proof participation.</li>
-      <li>Reusable governance template.</li>
-      <li>Mobile-friendly and secure UI/UX.</li>
-    </ul>
-    <div class="lighthouse">
-      <strong>Lighthouse Scores:</strong><br/>
-      ✅ Performance: 98<br/>
-      ✅ Accessibility: 100<br/>
-      ✅ Best Practices: 100<br/>
-      ✅ SEO: 95
-    </div>
-
-    <h2>🔄 Future Enhancements</h2>
-    <ul>
-      <li>🧾 Transaction Audit Log</li>
-      <li>📱 PWA Support</li>
-      <li>🧑🏽‍🌾 Co-op Integrations</li>
-      <li>🏛️ DAO-ready Infrastructure</li>
-    </ul>
-
-    <h2>👨🏽‍💻 Try It Live</h2>
-    <div class="buttons">
-      <a href="https://voting-dapp-kktj.vercel.app/" target="_blank">🌐 View Live Site</a>
-      <a href="https://github.com/Nick-Maximillien/voting-dapp" target="_blank" class="github">💻 GitHub Repository</a>
-    </div>
+<div class="container">
+  <div class="header">
+    <h1>Voting DApp</h1>
+    <p>Blockchain Voting for Agricultural Cooperatives — Transparent, Tamper-Proof Elections</p>
+    <img src="../images/voting.png" alt="Voting DApp Banner" class="project-banner" />
   </div>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      This decentralized application enables cooperatives to manage transparent voting on leadership, finances, and critical decisions. It leverages Ethereum smart contracts to ensure each vote is verifiable, anonymous, and immutable.
+    </p>
+  </section>
+
+  <section>
+    <h2>Tech Stack</h2>
+    <ul>
+      <li><strong>Frontend:</strong> Next.js, Tailwind CSS</li>
+      <li><strong>Smart Contracts:</strong> Solidity, Sepolia Testnet</li>
+      <li><strong>Wallet Integration:</strong> MetaMask + ethers.js</li>
+      <li><strong>Data Visualization:</strong> Recharts</li>
+      <li><strong>Hosting:</strong> Vercel</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Smart Contract Features</h2>
+    <ul>
+      <li>Proposal creation and management</li>
+      <li>Admin/member role separation</li>
+      <li>Vote casting with delegation support</li>
+      <li>Real-time on-chain charting</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Demo Video</h2>
+    <iframe src="https://www.youtube.com/embed/0xgP9RxhThQ" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <h2>Screenshots</h2>
+    <img src="../images/voting1.png" alt="Voting Summary" class="screenshot">
+    <img src="../images/voting2.png" alt="Proposal Form" class="screenshot">
+  </section>
+
+  <section class="links">
+    <h2>Links</h2>
+    <a href="https://voting-dapp-kktj.vercel.app/" target="_blank">🌐 Live DApp</a>
+    <a href="https://github.com/Nick-Maximillien/voting-dapp" target="_blank">📦 GitHub Repo</a>
+  </section>
+
+  <section>
+    <h2>My Role</h2>
+    <p>
+      I handled the fullstack development — from writing Solidity contracts to building the frontend interface, integrating wallet connection, and implementing vote charts. This project demonstrates a complete dApp lifecycle including UI/UX, governance logic, and on-chain analytics.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 | Nicholas Muthoki
+  </footer>
+</div>
+
 </body>
 </html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agricultural AI Assistant | Agrosight</title>
+  <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="../css/styles1.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #e6f0ff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-top: 0;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      border-left: 4px solid #0066cc;
+      padding-left: 10px;
+      color: #003366;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+    }
+
+    p, ul {
+      font-size: 1rem;
+      color: #222;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .screenshot-img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 6px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 8px 16px;
+      background-color: #003366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      transition: background 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: #0052cc;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 0.5rem;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #ccdfff;
+      font-size: 0.9rem;
+      color: #444;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .links a {
+        display: block;
+        margin-bottom: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="position: relative;" class="row head portfoliohead col-md-12 col-sm-12 col-xs-12">
+      <figure class="col-md-2 col-sm-2 col-xs-2 logoFig">
+        <img class="logo" src="../images/google.png" alt="" />
+      </figure>
+      <ul class="navList col-md-10 col-sm-10 col-xs-10">
+        <li class="nav about"><a class="navlink" href="../index.html">Home</a></li>
+        <li class="nav portfolio"><a class="navlink" href="about.html">About</a></li>
+        <li class="nav blog"><a class="navlink active blog" href="portfolio.html">Portfolio</a></li>
+        <li class="nav contact"><a class="navlink" href="contactPage.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="header">
+      <h1>Agrosight AI Assistant</h1>
+      <p>Computer vision for rural agriculture — deployable on WhatsApp, web & offline.</p>
+    </div>
+
+    <section>
+      <h2>What It Does</h2>
+      <p>
+        Agrosight AI is a real-time crop disease detection platform. Farmers upload images via WhatsApp or web,
+        and the system returns localized Swahili advice based on AI diagnosis. It’s designed to run lean, offline-first, and field-tested.
+      </p>
+      <section class="links">
+        <a href="https://www.canva.com/design/DAGuQ1jsWuw/le2KZHSP_blKFtxkXvi9FA/edit?utm_content=DAGuQ1jsWuw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">📁 View in Canva</a>
+      </section>
+    </section>
+
+    <section>
+      <h2>Tech Stack</h2>
+      <ul>
+        <li><strong>Frontend:</strong> Next.js (Static Export), Tailwind CSS</li>
+        <li><strong>Backend:</strong> FastAPI + YOLOv8 (ONNX)</li>
+        <li><strong>Database:</strong> Django + PostgreSQL</li>
+        <li><strong>Storage:</strong> Cloudinary</li>
+        <li><strong>Messaging:</strong> WhatsApp + Celery + Redis</li>
+        <li><strong>Fallback:</strong> Swahili expert templates (offline logic)</li>
+        <li><strong>Hosting:</strong> Vercel, Railway, Render</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎥 Demo Videos</h2>
+
+      <div>
+        <h3>WhatsApp Assistant Demo</h3>
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/vNyGnRv35yE" 
+            title="WhatsApp Demo" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <div style="margin-top: 2rem;">
+        <h3>Web Assistant Demo</h3>
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/-FRqdW6BjxI" 
+            title="Web Assistant Demo" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Live Screenshots</h2>
+      <img src="../images/shot3.png" alt="Web Screenshot" class="screenshot-img" />
+      <img src="../images/shot1.png" alt="AI Result Example" class="screenshot-img" />
+      <img src="../images/shot2.png" alt="AI Result Example" class="screenshot-img" />
+      <img src="../images/dash.png" alt="Dashboard" class="screenshot-img" />
+      <img src="../images/dash1.png" alt="Dashboard" class="screenshot-img" />
+      <img src="../images/dash5.png" alt="Dashboard" class="screenshot-img" />
+      <img src="../images/dash6.png" alt="Dashboard" class="screenshot-img" />
+      <img src="../images/dash7.png" alt="Dashboard" class="screenshot-img" />
+    </section>
+
+    <section class="links">
+      <h2>Live Links</h2>
+      <a href="https://agrosight-ai.vercel.app" target="_blank">🌐 Web App</a>
+      <a href="https://agrosight-ai.vercel.app/whatsapp" target="_blank">💬 WhatsApp Assistant</a>
+      <a href="https://www.notion.so/Agrosight-AI-23cfd0d4350d80d9a25dccef402872d3" target="_blank">📁 Notion Launchkit</a>
+    </section>
+
+    <section>
+      <h2>Notes from the Builder</h2>
+      <p>
+        This platform was built in focused solitude to serve the most overlooked users: rural farmers. Every line of code, every model, and every insight is designed for clarity, speed, and offline usability.
+        The system runs silently — delivering intelligence, not noise.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 | Nick Muthoki
+  </footer>
+</body>
+</html>

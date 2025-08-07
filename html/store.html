@@ -9,81 +9,125 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f4f8fc;
       color: #333;
     }
+
     header {
-      background-color: #228B22;
+      background-color: #1a73e8;
       color: white;
-      padding: 2.5rem 1rem 1rem;
+      padding: 2rem 1rem 1.5rem;
       text-align: center;
     }
+
     .navList {
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
       padding: 0;
       margin: 0 0 1rem;
-      flex-wrap: wrap;
     }
-    .navList li a {
+
+    .navList a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
-      padding: 0.4rem 0.8rem;
+      font-weight: 500;
+      padding-bottom: 4px;
     }
-    .navList li a.active {
-      text-decoration: underline;
+
+    .navList a.active {
+      border-bottom: 2px solid white;
     }
+
     .header-buttons {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
+
     .header-buttons a {
       display: inline-block;
       text-decoration: none;
       background-color: white;
-      color: #228B22;
+      color: #1a73e8;
       border: 2px solid white;
       border-radius: 5px;
-      padding: 0.6rem 1.2rem;
+      padding: 0.5rem 1rem;
       margin: 0.5rem;
       font-weight: bold;
       transition: background 0.3s, color 0.3s;
     }
+
     .header-buttons a:hover {
-      background-color: #1a6b1a;
+      background-color: #1259c3;
       color: white;
     }
-    .container {
+
+    main.container {
       max-width: 1000px;
       margin: auto;
-      padding: 2rem;
-      background: white;
+      padding: 3rem 1rem;
     }
-    h1, h2 {
-      color: #228B22;
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
     }
+
+    h2 {
+      color: #1a73e8;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
     .section {
       margin-bottom: 2.5rem;
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.05);
     }
+
+    .section ul {
+      padding-left: 1.3rem;
+    }
+
+    .section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      background: #eaeaea;
+      margin-top: 4rem;
       font-size: 0.9rem;
-      color: #777;
+      color: #555;
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 768px) {
       .navList {
         flex-direction: column;
-        align-items: center;
+        gap: 0.75rem;
       }
+
       .header-buttons a {
         display: block;
         margin: 0.5rem auto;
         width: 80%;
-        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.8rem;
       }
     }
   </style>
@@ -98,7 +142,7 @@
       <li><a href="contactPage.html">Contact</a></li>
     </ul>
     <h1>Smart Agrovet Webstore</h1>
-    <p>Empowering modern farmers through e-commerce and agritech integration</p>
+    <p>Empowering modern farmers through e-commerce and AI integration</p>
     <div class="header-buttons">
       <a href="https://agrosight.netlify.app" target="_blank">🌐 Live Site</a>
       <a href="https://github.com/Nick-Maximillien/online-store" target="_blank">📦 GitHub Repo</a>
@@ -106,29 +150,30 @@
   </header>
 
   <main class="container">
+
     <section class="section">
       <h2>📌 Project Overview</h2>
       <p>
-        Smart Agrovet is a full-featured online shop for farming inputs and implements, built to streamline agricultural product access for small to large-scale farmers. It’s also designed to integrate with an AI-powered agritech platform featuring a YOLOv8-trained crop disease detector and GPT-4 insights engine — making it not just a shop, but a gateway to intelligent farming.
+        Smart Agrovet is a full-featured online store for farm inputs, designed to streamline access to seeds, tools, and equipment for small and large-scale farmers. It's also intended to integrate with Agrosight AI — an AI-powered diagnosis engine that helps farmers identify crop issues via WhatsApp.
       </p>
     </section>
 
     <section class="section">
       <h2>🎯 Goals</h2>
       <ul>
-        <li>Create a modern, mobile-friendly agricultural e-commerce store</li>
-        <li>Enable farmers to browse, search, and buy tools, seeds, fertilizers, and equipment</li>
-        <li>Serve as a frontend gateway for future integration with AI-powered crop diagnosis and insights tools</li>
+        <li>Create a mobile-first e-commerce experience for farmers</li>
+        <li>Enable smart browsing and checkout for agri-products</li>
+        <li>Serve as a frontend entry point for AI-powered crop diagnosis</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>🧰 Tech Stack</h2>
       <ul>
-        <li><strong>Frontend:</strong> Next.js, TypeScript, Tailwind CSS</li>
-        <li><strong>Backend:</strong> Django with REST API</li>
+        <li><strong>Frontend:</strong> Next.js, Tailwind CSS, TypeScript</li>
+        <li><strong>Backend:</strong> Django REST Framework</li>
+        <li><strong>CMS:</strong> Django Admin Panel</li>
         <li><strong>Image Storage:</strong> Cloudinary</li>
-        <li><strong>CMS:</strong> Django Admin</li>
         <li><strong>Deployment:</strong> Netlify (frontend), Railway (backend)</li>
       </ul>
     </section>
@@ -136,45 +181,46 @@
     <section class="section">
       <h2>👨‍💻 My Role</h2>
       <p>
-        I worked as the sole fullstack developer — designing, coding, and deploying the entire system end-to-end, including:
+        I worked as the sole fullstack developer and product architect. I handled:
       </p>
       <ul>
-        <li>Planning database schema and Django models</li>
-        <li>Designing and building the responsive Next.js frontend</li>
-        <li>Setting up Cloudinary for optimized image delivery</li>
-        <li>Building the admin CMS for product management</li>
-        <li>Deploying and connecting the frontend and backend via RESTful APIs</li>
+        <li>Designing Django models and API endpoints</li>
+        <li>Building a fast, mobile-optimized frontend with Next.js</li>
+        <li>Setting up Cloudinary for real-time image scaling</li>
+        <li>Creating an admin CMS for store owners</li>
+        <li>Managing deployment pipelines for both frontend and backend</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>🚧 Challenges</h2>
       <p>
-        One of the key challenges was optimizing image delivery for product pages while keeping load times low for rural users with limited connectivity. I resolved this by integrating Cloudinary with dynamic image scaling. Another challenge was structuring a backend that could eventually scale into a more advanced agritech platform.
+        Rural user performance was a key concern — Cloudinary’s CDN helped optimize image delivery. Another challenge was building a system flexible enough to scale into a broader AI ecosystem (e.g. connecting product data with diagnosis results).
       </p>
     </section>
 
     <section class="section">
       <h2>📈 Outcome & Lessons Learned</h2>
       <p>
-        The Smart Agrovet Webstore is now a solid foundation for a growing agritech ecosystem. I learned a lot about REST API integration, performance optimization, and designing systems with future AI scalability in mind. This project also improved my ability to juggle both frontend and backend development independently.
+        The project served as a foundational block for Agrosight’s broader vision. I deepened my experience with REST API design, frontend performance tuning, and designing systems with scalable AI integration in mind.
       </p>
     </section>
 
     <section class="section">
-      <h2>📬 Get In Touch</h2>
+      <h2>📬 Let’s Work Together</h2>
       <p>
-        Looking to build a custom e-commerce solution, or integrate AI into your industry platform? Let’s work together.
+        Need an e-commerce solution tailored for your industry — or want to blend AI with online sales? Let's build it.
       </p>
       <p>
-        <a href="contactPage.html">📨 Contact Me</a><br>
-        📧 <a href="mailto:nicholasmuthoki@example.com">Send me an email</a>
+        <a href="contactPage.html">📨 Contact Me</a> <br />
+        📧 <a href="mailto:nicholasmuthoki@gmail.com">nicholasmuthoki@gmail.com</a>
       </p>
     </section>
+
   </main>
 
   <footer>
-    &copy; 2025 Nick Maximillien. All rights reserved.
+    &copy; 2025 Nicholas Muthoki. All rights reserved.
   </footer>
 
 </body>
